@@ -2,6 +2,8 @@
 
 > **Predicting Startup Profit Using Scikit-Learn** | Regression | CRISP-DM Framework
 
+![Introduce](introduce.jpg)
+
 ![Workflow](workflow.png)
 
 ---
