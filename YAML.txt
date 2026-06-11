@@ -1,0 +1,370 @@
+project:
+  name: "Kaggle 50 Startups Analysis"
+  subtitle: "CRISP-DM + Scikit-Learn Machine Learning Project"
+  dataset: "Kaggle 50 Startups"
+  problem_type: "Regression"
+  target: "Profit"
+
+business_understanding:
+
+  objectives:
+    - 找出影響 Profit 的關鍵因素
+    - 建立可解釋的獲利預測模型
+    - 驗證 R&D 是否為主要獲利驅動因子
+    - 分析 Marketing 對 Profit 的影響
+    - 評估 Administration 的實際價值
+    - 驗證 State 是否具有統計顯著性
+    - 提供企業預算配置建議
+
+  business_questions:
+    - 哪些因素最影響 Profit
+    - R&D 是否比 Marketing 更重要
+    - Administration 是否只是成本中心
+    - State 是否影響 Profit
+    - 如何最佳化資源配置
+    - 如何提升 ROI
+
+  hypotheses:
+    H1:
+      description: "R&D Spend 與 Profit 高度正相關"
+
+    H2:
+      description: "Marketing Spend 與 Profit 中度正相關"
+
+    H3:
+      description: "Administration 對 Profit 影響有限"
+
+    H4:
+      description: "State 對 Profit 影響不顯著"
+
+  success_criteria:
+
+    business:
+      - 找出主要獲利因子
+      - 提供預算配置建議
+      - 支援決策制定
+
+    technical:
+      r2_minimum: 0.90
+      cross_validation: true
+      explainability_required: true
+
+data_understanding:
+
+  dataset_overview:
+
+    rows: 50
+
+    features:
+      - R&D Spend
+      - Administration
+      - Marketing Spend
+      - State
+
+    target:
+      - Profit
+
+  data_dictionary:
+
+    R&D Spend:
+      type: numerical
+      description: 研發支出
+
+    Administration:
+      type: numerical
+      description: 行政支出
+
+    Marketing Spend:
+      type: numerical
+      description: 行銷支出
+
+    State:
+      type: categorical
+      description: 公司所在地
+
+    Profit:
+      type: numerical
+      description: 公司獲利
+
+  quality_checks:
+
+    missing_values:
+      method: isnull
+
+    duplicate_records:
+      method: duplicated
+
+    data_types:
+      method: info
+
+  exploratory_data_analysis:
+
+    univariate_analysis:
+
+      Profit:
+        - histogram
+        - kde
+        - boxplot
+
+      R&D Spend:
+        - histogram
+        - boxplot
+
+      Marketing Spend:
+        - histogram
+        - boxplot
+
+      Administration:
+        - histogram
+        - boxplot
+
+    bivariate_analysis:
+
+      - Profit_vs_R&D
+      - Profit_vs_Marketing
+      - Profit_vs_Administration
+
+    correlation_analysis:
+
+      method:
+        - correlation_matrix
+        - heatmap
+
+      expected_relationships:
+
+        R&D Spend:
+          strength: very_high
+
+        Marketing Spend:
+          strength: moderate
+
+        Administration:
+          strength: low
+
+    state_analysis:
+
+      visualizations:
+        - boxplot
+
+      statistical_test:
+        name: ANOVA
+        alpha: 0.05
+
+    outlier_analysis:
+
+      methods:
+        - IQR
+        - BoxPlot
+
+data_preparation:
+
+  feature_engineering:
+
+    TotalSpend:
+      formula: "R&D + Marketing + Administration"
+
+    ROI:
+      formula: "Profit / TotalSpend"
+
+    RDRatio:
+      formula: "R&D / TotalSpend"
+
+    MarketingRatio:
+      formula: "Marketing / TotalSpend"
+
+  encoding:
+
+    State:
+      method: OneHotEncoder
+
+  train_test_split:
+
+    test_size: 0.20
+    random_state: 42
+
+  scaling:
+
+    method: StandardScaler
+
+    applied_models:
+      - Lasso
+      - Ridge
+
+multicollinearity_analysis:
+
+  vif:
+
+    enabled: true
+
+    thresholds:
+
+      good: 5
+
+      moderate: 10
+
+      severe: 10+
+
+    objective:
+      - 檢查共線性
+      - 評估特徵穩定性
+
+feature_selection:
+
+  methods:
+
+    LassoCV:
+      objective: 自動特徵選擇
+
+    RFE:
+      objective: 遞迴特徵消除
+
+  outputs:
+
+    - selected_features
+    - feature_ranking
+
+modeling:
+
+  baseline_model:
+
+    name: LinearRegression
+
+    objectives:
+      - 建立基準模型
+      - 解釋係數
+
+  candidate_models:
+
+    - RidgeRegression
+    - LassoRegression
+    - RandomForestRegressor
+    - GradientBoostingRegressor
+
+  advanced_models:
+
+    optional:
+      - XGBoost
+      - LightGBM
+
+evaluation:
+
+  metrics:
+
+    - R2
+    - MAE
+    - RMSE
+
+  cross_validation:
+
+    enabled: true
+
+    folds: 5
+
+  model_comparison:
+
+    columns:
+      - Model
+      - R2
+      - MAE
+      - RMSE
+
+explainable_ai:
+
+  shap:
+
+    global_explanation: true
+
+    local_explanation: true
+
+    outputs:
+      - summary_plot
+      - waterfall_plot
+      - force_plot
+
+  permutation_importance:
+
+    enabled: true
+
+business_analytics:
+
+  what_if_analysis:
+
+    scenarios:
+
+      - name: Increase_R&D_10_percent
+
+      - name: Increase_Marketing_10_percent
+
+      - name: Decrease_Administration_10_percent
+
+  budget_analysis:
+
+    compare:
+      - HighProfitCompanies
+      - LowProfitCompanies
+
+  roi_analysis:
+
+    objective:
+      - 找出最高 ROI 公司
+      - 找出最佳投資配置
+
+  clustering:
+
+    algorithm: KMeans
+
+    features:
+      - R&D Spend
+      - Marketing Spend
+      - Administration
+
+    expected_clusters:
+
+      - InnovationDriven
+
+      - MarketingDriven
+
+      - Balanced
+
+business_insights:
+
+  expected_findings:
+
+    - R&D 為最重要獲利因子
+    - Marketing 為次要獲利因子
+    - Administration 影響有限
+    - State 不一定具有顯著性
+    - 高獲利企業具有特殊投資結構
+
+recommendations:
+
+  - 增加 R&D 投資
+  - 提高 Marketing 效率
+  - 控制 Administration 成本
+  - 建立 Profit 預測模型
+  - 建立預算配置決策系統
+
+deployment:
+
+  platform: Streamlit
+
+  modules:
+
+    - Profit Prediction
+    - What-if Analysis
+    - SHAP Dashboard
+    - Feature Importance
+    - ROI Dashboard
+
+deliverables:
+
+  - CRISP_DM_Report
+  - EDA_Report
+  - Statistical_Analysis_Report
+  - Feature_Selection_Report
+  - Machine_Learning_Models
+  - SHAP_Report
+  - Business_Insights_Report
+  - Streamlit_Dashboard
+  - GitHub_Repository
+  - Presentation_Slides

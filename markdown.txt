@@ -1,0 +1,830 @@
+# Kaggle 50 Startups 資料分析專案
+## 基於 CRISP-DM 與 Scikit-Learn 的完整機器學習分析流程
+
+---
+
+# 專案資訊
+
+## 專案名稱
+
+Predicting Startup Profit Using Machine Learning
+
+---
+
+## 資料集
+
+Kaggle - 50 Startups Dataset
+
+---
+
+## 專案目標
+
+建立可解釋的獲利預測模型，並回答以下商業問題：
+
+1. 哪些因素最影響企業 Profit？
+2. R&D 是否比 Marketing 更重要？
+3. Administration 是否對 Profit 有實質影響？
+4. State 是否影響 Profit？
+5. 如何最佳化企業資源配置？
+6. 如何建立可解釋且可靠的預測模型？
+
+---
+
+# CRISP-DM Framework
+
+```text
+Business Understanding
+        ↓
+Data Understanding
+        ↓
+Data Preparation
+        ↓
+Modeling
+        ↓
+Evaluation
+        ↓
+Deployment & Business Insight
+```
+
+---
+
+# 1. Business Understanding
+
+## 商業背景
+
+企業管理者希望了解：
+
+- 如何提升 Profit
+- 如何分配有限預算
+- 哪些投資最值得投入
+- 如何預測未來獲利
+
+---
+
+## Business Questions
+
+### Q1
+
+哪些因素最影響 Profit？
+
+### Q2
+
+增加 R&D 是否能提高 Profit？
+
+### Q3
+
+Marketing 是否有效？
+
+### Q4
+
+Administration 是否只是成本中心？
+
+### Q5
+
+不同 State 是否影響 Profit？
+
+---
+
+## Business Hypothesis
+
+### H1
+
+R&D Spend 與 Profit 呈現強正相關
+
+### H2
+
+Marketing Spend 與 Profit 呈現中度正相關
+
+### H3
+
+Administration 對 Profit 影響較小
+
+### H4
+
+State 對 Profit 影響有限
+
+---
+
+## Success Criteria
+
+### Business Success
+
+- 找出最重要獲利因子
+- 提供預算配置建議
+
+### Technical Success
+
+- R² > 0.90
+- RMSE 最小化
+- 模型具可解釋性
+
+---
+
+# 2. Data Understanding
+
+---
+
+## Dataset Overview
+
+| Feature | Type | Description |
+|----------|----------|----------|
+| R&D Spend | Numerical | 研發支出 |
+| Administration | Numerical | 行政支出 |
+| Marketing Spend | Numerical | 行銷支出 |
+| State | Categorical | 州別 |
+| Profit | Numerical | 目標變數 |
+
+---
+
+## Step 1：資料載入
+
+### 檢查資料結構
+
+```python
+df.info()
+```
+
+### 查看前五筆
+
+```python
+df.head()
+```
+
+### 基本統計量
+
+```python
+df.describe()
+```
+
+---
+
+## Step 2：資料品質檢查
+
+### Missing Values
+
+```python
+df.isnull().sum()
+```
+
+### Duplicate Records
+
+```python
+df.duplicated().sum()
+```
+
+---
+
+## Step 3：單變數分析
+
+### Profit Distribution
+
+- Histogram
+- KDE Plot
+- Box Plot
+
+分析：
+
+- 常態性
+- 偏態
+- 離群值
+
+---
+
+### R&D Spend
+
+分析：
+
+- 是否存在零投入公司
+- 分布特性
+
+---
+
+### Marketing Spend
+
+分析：
+
+- 高低投入差異
+
+---
+
+### Administration
+
+分析：
+
+- 是否變異較低
+
+---
+
+## Step 4：雙變數分析
+
+### Scatter Plot
+
+Profit vs R&D Spend
+
+Profit vs Marketing Spend
+
+Profit vs Administration
+
+---
+
+### Pairplot
+
+```python
+sns.pairplot(df)
+```
+
+---
+
+## Step 5：Correlation Analysis
+
+建立 Correlation Matrix
+
+```python
+df.corr()
+```
+
+繪製：
+
+```python
+sns.heatmap()
+```
+
+---
+
+### 預期驗證
+
+| Feature | Expected Correlation |
+|-----------|-----------|
+| R&D Spend | Very High |
+| Marketing Spend | Moderate |
+| Administration | Low |
+
+---
+
+## Step 6：State Analysis
+
+### Boxplot
+
+Profit by State
+
+### ANOVA
+
+```python
+from scipy.stats import f_oneway
+```
+
+檢定：
+
+```text
+H0:
+Profit_CA = Profit_FL = Profit_NY
+```
+
+判斷：
+
+```text
+p < 0.05
+```
+
+是否顯著
+
+---
+
+## Step 7：Outlier Analysis
+
+方法：
+
+- IQR
+- Boxplot
+
+分析：
+
+- 極高獲利企業
+- 極低獲利企業
+
+---
+
+# 3. Data Preparation
+
+---
+
+## Step 8：Feature Engineering
+
+### ROI
+
+新增：
+
+```python
+ROI =
+Profit /
+(R&D + Marketing + Administration)
+```
+
+---
+
+### Total Spend
+
+新增：
+
+```python
+TotalSpend =
+R&D +
+Marketing +
+Administration
+```
+
+---
+
+### Marketing Ratio
+
+新增：
+
+```python
+MarketingRatio =
+Marketing /
+TotalSpend
+```
+
+---
+
+### R&D Ratio
+
+新增：
+
+```python
+RDRatio =
+R&D /
+TotalSpend
+```
+
+---
+
+## Step 9：Encoding
+
+### One-Hot Encoding
+
+State
+
+```python
+OneHotEncoder()
+```
+
+轉換：
+
+California
+
+Florida
+
+New York
+
+---
+
+## Step 10：Train Test Split
+
+```python
+train_test_split()
+```
+
+比例：
+
+```python
+80%
+20%
+```
+
+---
+
+## Step 11：Feature Scaling
+
+使用：
+
+```python
+StandardScaler()
+```
+
+套用於：
+
+- Lasso
+- Ridge
+
+---
+
+# 4. Multicollinearity Analysis
+
+---
+
+## Step 12：VIF Analysis
+
+檢查：
+
+```python
+Variance Inflation Factor
+```
+
+判斷：
+
+| VIF | Interpretation |
+|-------|-------|
+| < 5 | Good |
+| 5~10 | Moderate |
+| > 10 | Serious |
+
+---
+
+### 分析目標
+
+確認：
+
+- R&D
+- Marketing
+
+是否共線
+
+---
+
+# 5. Feature Selection
+
+---
+
+## Step 13：Lasso Regression
+
+使用：
+
+```python
+LassoCV()
+```
+
+目的：
+
+自動選擇重要特徵
+
+---
+
+## Step 14：Recursive Feature Elimination
+
+使用：
+
+```python
+RFE()
+```
+
+比較：
+
+- 原始特徵
+- 衍生特徵
+
+---
+
+# 6. Modeling
+
+---
+
+## Model 1
+
+Linear Regression
+
+### 目的
+
+建立 Baseline Model
+
+---
+
+## Model 2
+
+Ridge Regression
+
+### 目的
+
+降低共線性影響
+
+---
+
+## Model 3
+
+Lasso Regression
+
+### 目的
+
+特徵選擇
+
+---
+
+## Model 4
+
+Random Forest Regressor
+
+### 目的
+
+捕捉非線性關係
+
+---
+
+## Model 5
+
+Gradient Boosting Regressor
+
+### 目的
+
+提升預測能力
+
+---
+
+## Optional
+
+### XGBoost
+
+### LightGBM
+
+---
+
+# 7. Model Evaluation
+
+---
+
+## Evaluation Metrics
+
+### R²
+
+```python
+r2_score()
+```
+
+---
+
+### MAE
+
+```python
+mean_absolute_error()
+```
+
+---
+
+### RMSE
+
+```python
+root_mean_squared_error()
+```
+
+---
+
+## K-Fold Cross Validation
+
+```python
+cross_val_score()
+```
+
+設定：
+
+```python
+K=5
+```
+
+---
+
+## 評估表
+
+| Model | R² | MAE | RMSE |
+|---------|---------|---------|---------|
+| Linear Regression | | | |
+| Ridge | | | |
+| Lasso | | | |
+| Random Forest | | | |
+| Gradient Boosting | | | |
+
+---
+
+# 8. Explainable AI
+
+---
+
+## SHAP Analysis
+
+### Global Explanation
+
+分析：
+
+整體特徵重要度
+
+---
+
+### Local Explanation
+
+分析：
+
+單一企業 Profit 預測原因
+
+---
+
+## SHAP Summary Plot
+
+排序：
+
+```text
+R&D
+Marketing
+Administration
+State
+```
+
+---
+
+## Permutation Importance
+
+驗證：
+
+特徵重要度穩定性
+
+---
+
+# 9. Business Analytics
+
+---
+
+## What-if Analysis
+
+模擬：
+
+### Scenario 1
+
+R&D +10%
+
+Profit ?
+
+---
+
+### Scenario 2
+
+Marketing +10%
+
+Profit ?
+
+---
+
+### Scenario 3
+
+Administration -10%
+
+Profit ?
+
+---
+
+## Budget Allocation Analysis
+
+比較：
+
+### High Profit Companies
+
+與
+
+### Low Profit Companies
+
+資源配置差異
+
+---
+
+## ROI Analysis
+
+分析：
+
+哪些企業：
+
+```python
+ROI =
+Profit /
+TotalSpend
+```
+
+最高
+
+---
+
+## Cluster Analysis
+
+K-Means
+
+特徵：
+
+- R&D
+- Marketing
+- Administration
+
+目標：
+
+找出企業類型
+
+---
+
+### Cluster A
+
+Innovation Driven
+
+---
+
+### Cluster B
+
+Marketing Driven
+
+---
+
+### Cluster C
+
+Balanced
+
+---
+
+# 10. Business Insights
+
+---
+
+## Insight 1
+
+R&D 為最重要獲利因子
+
+---
+
+## Insight 2
+
+Marketing 為次要驅動因子
+
+---
+
+## Insight 3
+
+Administration 對 Profit 影響有限
+
+---
+
+## Insight 4
+
+State 不一定具有統計顯著性
+
+---
+
+## Insight 5
+
+高獲利企業具有特定投資結構
+
+---
+
+# 11. Final Recommendation
+
+---
+
+### 建議一
+
+增加 R&D 投資
+
+---
+
+### 建議二
+
+優化 Marketing 效率
+
+---
+
+### 建議三
+
+控制 Administration 成本
+
+---
+
+### 建議四
+
+建立 Profit 預測系統
+
+---
+
+### 建議五
+
+建立預算配置決策儀表板
+
+---
+
+# Deployment
+
+推薦：
+
+### Streamlit
+
+功能：
+
+- Profit Prediction
+- What-if Simulation
+- SHAP Explanation
+- Feature Importance
+- ROI Dashboard
+
+---
+
+# 最終交付成果
+
+1. CRISP-DM Report
+2. EDA Report
+3. Statistical Analysis Report
+4. Feature Selection Report
+5. Machine Learning Models
+6. SHAP Explainability Report
+7. Business Recommendation Report
+8. Streamlit Dashboard
+9. GitHub Repository
+10. Portfolio Presentation Slides
