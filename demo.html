@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaggle 50 Startups — CRISP-DM ML Project</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.7; }
+.container { max-width: 1000px; margin: 0 auto; padding: 40px 24px; }
+h1 { font-size: 2.2rem; background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+h2 { font-size: 1.5rem; color: #38bdf8; margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 2px solid #1e293b; }
+h3 { font-size: 1.15rem; color: #94a3b8; margin: 28px 0 12px; }
+p, li { color: #cbd5e1; margin-bottom: 8px; }
+a { color: #38bdf8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.subtitle { color: #94a3b8; margin-bottom: 32px; font-size: 1rem; }
+.badge { display: inline-block; background: #1e293b; color: #38bdf8; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; margin-right: 6px; margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+th, td { border: 1px solid #1e293b; padding: 10px 14px; text-align: left; }
+th { background: #1e293b; color: #38bdf8; font-weight: 600; }
+td { background: #0f172a; }
+img { max-width: 100%; height: auto; border-radius: 12px; margin: 16px 0; border: 1px solid #1e293b; }
+.section { margin-bottom: 8px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { background: #1e293b; border-radius: 12px; padding: 20px; border: 1px solid #334155; }
+.card h4 { color: #38bdf8; margin-bottom: 8px; }
+.highlight { color: #facc15; font-weight: 600; }
+.code { background: #0f172a; border: 1px solid #1e293b; border-radius: 8px; padding: 14px 18px; font-family: 'Courier New', monospace; font-size: 0.85rem; overflow-x: auto; color: #a5f3fc; margin: 12px 0; }
+.tag { display: inline-block; background: #1e293b; color: #38bdf8; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; margin: 2px; }
+.footer { text-align: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid #1e293b; color: #64748b; font-size: 0.85rem; }
+@media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Kaggle 50 Startups — CRISP-DM ML Project</h1>
+  <p class="subtitle">Predicting Startup Profit Using Scikit-Learn &middot; Regression &middot; CRISP-DM Framework</p>
+
+  <img src="introduce.jpg" alt="Introduce">
+
+  <img src="workflow.png" alt="Workflow">
+
+  <!-- Project Overview -->
+  <h2>Project Overview</h2>
+  <table>
+    <tr><th>Item</th><th>Description</th></tr>
+    <tr><td><strong>Dataset</strong></td><td><a href="https://www.kaggle.com/datasets/farhanmd29/50-startups">Kaggle 50 Startups</a></td></tr>
+    <tr><td><strong>Problem Type</strong></td><td>Regression</td></tr>
+    <tr><td><strong>Target Variable</strong></td><td>Profit</td></tr>
+    <tr><td><strong>Features</strong></td><td>R&amp;D Spend, Administration, Marketing Spend, State</td></tr>
+    <tr><td><strong>Framework</strong></td><td>CRISP-DM (Cross-Industry Standard Process for Data Mining)</td></tr>
+    <tr><td><strong>Best Model</strong></td><td>GradientBoosting Regressor</td></tr>
+    <tr><td><strong>Best R&sup2;</strong></td><td><strong>0.9160</strong> (target &ge; 0.90)</td></tr>
+  </table>
+
+  <!-- Business Questions -->
+  <h2>Business Questions</h2>
+  <ol style="margin-left: 20px;">
+    <li>Which factors most influence Profit?</li>
+    <li>Is R&amp;D more important than Marketing?</li>
+    <li>Does Administration have real impact on Profit?</li>
+    <li>Does State affect Profit?</li>
+    <li>How to optimize resource allocation?</li>
+  </ol>
+
+  <h3>Hypotheses</h3>
+  <table>
+    <tr><th>Hypothesis</th><th>Description</th><th>Result</th></tr>
+    <tr><td>H1</td><td>R&amp;D Spend is highly correlated with Profit</td><td><strong style="color:#22c55e">Confirmed</strong> (r = 0.973)</td></tr>
+    <tr><td>H2</td><td>Marketing Spend is moderately correlated with Profit</td><td><strong style="color:#22c55e">Confirmed</strong> (r = 0.748)</td></tr>
+    <tr><td>H3</td><td>Administration has limited impact on Profit</td><td><strong style="color:#22c55e">Confirmed</strong> (r = 0.201)</td></tr>
+    <tr><td>H4</td><td>State has no significant effect on Profit</td><td><strong style="color:#22c55e">Confirmed</strong> (ANOVA p = 0.567)</td></tr>
+  </table>
+
+  <!-- CRISP-DM Pipeline -->
+  <h2>CRISP-DM Pipeline</h2>
+
+  <h3>Phase 1: Business Understanding</h3>
+  <p>Define objectives, hypotheses, and success criteria. Target: R&sup2; &ge; 0.90.</p>
+
+  <h3>Phase 2: Data Understanding (EDA)</h3>
+  <ul style="margin-left: 20px;">
+    <li>50 rows, 5 columns, no missing values, no duplicates</li>
+    <li>Correlation: <strong>R&amp;D (0.973)</strong> &gt; Marketing (0.748) &gt; Administration (0.201)</li>
+    <li>ANOVA: State not significant (p = 0.567)</li>
+  </ul>
+  <img src="reports/correlation_heatmap.png" alt="Correlation Heatmap">
+
+  <h3>Phase 3: Data Preparation</h3>
+  <ul style="margin-left: 20px;">
+    <li>Feature Engineering: TotalSpend, ROI, RDRatio, MarketingRatio</li>
+    <li>One-Hot Encoding: State &rarr; California, Florida, New York</li>
+    <li>Train/Test Split: 80/20 (random_state=42)</li>
+    <li>Scaling: StandardScaler (for Ridge, Lasso)</li>
+  </ul>
+
+  <h3>Phase 4: Multicollinearity (VIF)</h3>
+  <p>All VIF values &lt; 5 &rarr; no multicollinearity issues.</p>
+
+  <h3>Phase 5: Feature Selection</h3>
+  <table>
+    <tr><th>Method</th><th>Selected Features</th></tr>
+    <tr><td><strong>LassoCV</strong></td><td>R&amp;D Spend, Marketing Spend, Administration</td></tr>
+    <tr><td><strong>RFE</strong></td><td>R&amp;D Spend, Marketing Spend</td></tr>
+  </table>
+  <img src="reports/feature_selection_final.png" alt="Feature Selection">
+  <img src="reports/combined_metrics.png" alt="Combined R2 and RMSE">
+
+  <h3>Phase 6: Modeling</h3>
+  <table>
+    <tr><th>Model</th><th>R&sup2;</th><th>MAE</th><th>RMSE</th><th>CV R&sup2; (5-fold)</th></tr>
+    <tr><td><strong>GradientBoosting</strong></td><td><strong>0.9160</strong></td><td>7,834</td><td>8,246</td><td><strong>0.931 &plusmn; 0.030</strong></td></tr>
+    <tr><td>RandomForest</td><td>0.9061</td><td>6,214</td><td>8,719</td><td>0.941 &plusmn; 0.052</td></tr>
+    <tr><td>LinearRegression</td><td>0.8987</td><td>6,961</td><td>9,056</td><td>0.929 &plusmn; 0.044</td></tr>
+    <tr><td>Ridge</td><td>0.8954</td><td>7,408</td><td>9,203</td><td>0.929 &plusmn; 0.038</td></tr>
+    <tr><td>Lasso</td><td>0.8988</td><td>6,961</td><td>9,055</td><td>0.929 &plusmn; 0.044</td></tr>
+    <tr><td>XGBoost</td><td>0.8828</td><td>7,507</td><td>9,742</td><td>0.914 &plusmn; 0.034</td></tr>
+  </table>
+
+  <h3>Phase 7: Evaluation</h3>
+  <p><strong>5-fold Cross-Validation</strong> for robust assessment. All models stable with CV R&sup2; ~0.93.</p>
+
+  <h3>Phase 8: Explainable AI (SHAP)</h3>
+  <img src="reports/shap_summary_GradientBoosting.png" alt="SHAP Summary">
+  <table>
+    <tr><th>Rank</th><th>Feature</th><th>SHAP Value</th><th>Permutation Importance</th></tr>
+    <tr><td>1</td><td>R&amp;D Spend</td><td><strong>24,978</strong></td><td>1.89</td></tr>
+    <tr><td>2</td><td>Marketing Spend</td><td><strong>3,839</strong></td><td>0.04</td></tr>
+    <tr><td>3</td><td>Administration</td><td><strong>1,622</strong></td><td>0.02</td></tr>
+    <tr><td>4</td><td>State_New York</td><td><strong>1,065</strong></td><td>0.008</td></tr>
+    <tr><td>5</td><td>State_Florida</td><td><strong>165</strong></td><td>0.0002</td></tr>
+  </table>
+
+  <h3>Phase 9: Business Analytics</h3>
+
+  <h4>What-If Analysis</h4>
+  <table>
+    <tr><th>Scenario</th><th>Profit Change</th><th>% Change</th></tr>
+    <tr><td>R&amp;D +10%</td><td><strong>+$15,225</strong></td><td><strong>+12.0%</strong></td></tr>
+    <tr><td>Marketing +10%</td><td>-$20</td><td>-0.02%</td></tr>
+    <tr><td>Administration -10%</td><td>+$3,056</td><td>+2.4%</td></tr>
+  </table>
+
+  <h4>Budget Analysis</h4>
+  <img src="reports/budget_allocation.png" alt="Budget Allocation">
+  <ul style="margin-left: 20px;">
+    <li>High-profit companies invest <strong>55% in Marketing</strong>, <strong>21% in R&amp;D</strong></li>
+    <li>Low-profit companies spend <strong>41% on Administration</strong> (inefficient)</li>
+  </ul>
+
+  <h4>Clustering (K-Means)</h4>
+  <table>
+    <tr><th>Cluster</th><th>R&amp;D</th><th>Marketing</th><th>Admin</th><th>Profit</th></tr>
+    <tr><td><strong>MarketingDriven</strong></td><td>105,606</td><td><strong>319,369</strong></td><td>124,205</td><td><strong>$139,199</strong></td></tr>
+    <tr><td>InnovationDriven</td><td>55,586</td><td>168,788</td><td>114,644</td><td>$99,331</td></tr>
+    <tr><td>Balanced</td><td>31,219</td><td>33,638</td><td>126,157</td><td>$71,043</td></tr>
+  </table>
+
+  <h3>Phase 10: Insights &amp; Recommendations</h3>
+  <ol style="margin-left: 20px;">
+    <li><strong>Prioritize R&amp;D Investment</strong> &mdash; strongest profit driver (r=0.973)</li>
+    <li><strong>Optimize Marketing Efficiency</strong> &mdash; high spend doesn't guarantee ROI</li>
+    <li><strong>Control Admin Costs</strong> &mdash; cost center, not value driver</li>
+    <li><strong>Build Profit Prediction System</strong> &mdash; use GradientBoosting model</li>
+    <li><strong>Implement Budget Allocation Dashboard</strong> &mdash; Streamlit app</li>
+  </ol>
+
+  <h3>Phase 11: Deployment</h3>
+  <img src="reports/workflow.png" alt="Workflow">
+
+  <h2>Feature Selection Comparison</h2>
+  <img src="reports/combined_metrics.png" alt="Combined R2 and RMSE">
+  <p><strong>Key Insight:</strong> R&amp;D alone achieves R&sup2;=0.9265 (exceeding the 0.90 target). Adding more features slightly reduces performance due to noise and multicollinearity.</p>
+
+  <h2>How to Run</h2>
+
+  <h3>Installation</h3>
+  <div class="code">pip install -r requirements.txt</div>
+
+  <h3>Full Pipeline</h3>
+  <div class="code">python -c "from src.main import main; main()"</div>
+
+  <h3>Streamlit Dashboard</h3>
+  <div class="code">streamlit run app/streamlit_app.py</div>
+
+  <h2>Project Structure</h2>
+  <div class="code">
+HW62/<br>
+&boxur;&nbsp; 50_Startups.csv&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Raw data<br>
+&boxur;&nbsp; YAML.txt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Project specification<br>
+&boxur;&nbsp; src/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Python modules<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; main.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Pipeline orchestrator<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; feature_selection.py&nbsp;&nbsp;&nbsp;# LassoCV + RFE<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; modeling.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Model training<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; evaluation.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Metrics &amp; CV<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; explainable_ai.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# SHAP<br>
+&nbsp;&nbsp;&nbsp;&boxur;&nbsp; business_analytics.py&nbsp;&nbsp;&nbsp;# What-if, budget, ROI<br>
+&boxur;&nbsp; app/streamlit_app.py&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Streamlit dashboard<br>
+&boxur;&nbsp; reports/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Generated charts<br>
+&boxur;&nbsp; notebooks/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Jupyter notebook<br>
+&boxur;&nbsp; requirements.txt<br>
+&boxur;&nbsp; .gitignore
+  </div>
+
+  <h2>Deliverables</h2>
+  <table>
+    <tr><th>Deliverable</th><th>Description</th></tr>
+    <tr><td>CRISP-DM Report</td><td>Full project documentation</td></tr>
+    <tr><td>EDA Report</td><td>Data exploration &amp; visualization</td></tr>
+    <tr><td>Statistical Analysis</td><td>Correlation, ANOVA, VIF</td></tr>
+    <tr><td>Feature Selection</td><td>LassoCV, RFE results</td></tr>
+    <tr><td>Machine Learning Models</td><td>7 trained models</td></tr>
+    <tr><td>SHAP Explainability</td><td>Global &amp; local explanations</td></tr>
+    <tr><td>Business Insights</td><td>What-if, budget, ROI analysis</td></tr>
+    <tr><td>Streamlit Dashboard</td><td>Interactive deployment</td></tr>
+    <tr><td>GitHub Repository</td><td>Version-controlled project</td></tr>
+    <tr><td>Presentation Slides</td><td>Portfolio showcase</td></tr>
+  </table>
+
+  <h2>Tech Stack</h2>
+  <p>
+    <span class="tag">Python 3.10+</span>
+    <span class="tag">pandas</span>
+    <span class="tag">NumPy</span>
+    <span class="tag">scikit-learn</span>
+    <span class="tag">matplotlib</span>
+    <span class="tag">seaborn</span>
+    <span class="tag">SHAP</span>
+    <span class="tag">XGBoost</span>
+    <span class="tag">LightGBM</span>
+    <span class="tag">Streamlit</span>
+  </p>
+
+  <div class="footer">
+    <p>View on <a href="https://github.com/jamessun0919-ops/HW6-Kaggle50StartupCrispDM">GitHub</a> &middot; For educational and portfolio purposes</p>
+  </div>
+
+</div>
+</body>
+</html>

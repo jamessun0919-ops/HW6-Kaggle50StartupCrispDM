@@ -3,7 +3,8 @@
 > **Predicting Startup Profit Using Scikit-Learn** | Regression | CRISP-DM Framework
 
 ### 🎥 Live Demo
-[<img src="https://img.shields.io/badge/🎥_Live_Demo-Watch_Presentation_Video-red?style=for-the-badge" width="320px" />](https://github.com/jamessun0919-ops/HW6-Kaggle50StartupCrispDM/raw/main/output.mp4)
+[<img src="https://img.shields.io/badge/🎥_Live_Demo-View_Demo_Page-red?style=for-the-badge" width="320px" />](https://jamessun0919-ops.github.io/HW6-Kaggle50StartupCrispDM/demo.html)
+[<img src="https://img.shields.io/badge/📺_Presentation-Watch_Video-blue?style=for-the-badge" width="320px" />](https://github.com/jamessun0919-ops/HW6-Kaggle50StartupCrispDM/raw/main/output.mp4)
 
 ![Introduce](introduce.jpg)
 
