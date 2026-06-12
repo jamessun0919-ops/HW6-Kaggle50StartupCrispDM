@@ -31,11 +31,11 @@
     }
     
     /* Hide scenes after first one initially */
-    #scene2 { #scene3 { #scene4 { #scene5 { #scene6 { #scene7 { #scene8 { #scene9 { #scene10 { #scene11 { #scene12 { #scene13 { #scene14 { #scene15 { #scene16 { #scene17 { #scene18 { #scene19 { #scene20 {
+    #scene2, #scene3, #scene4, #scene5, #scene6, #scene7, #scene8, #scene9, #scene10, #scene11, #scene12, #scene13, #scene14, #scene15, #scene16, #scene17, #scene18, #scene19, #scene20 {
       opacity: 0;
-    }}}}}}}}}}}}}}}}}}
+    }
     
-    /* Subtitles Container & Styles */
+    /* Subtitles Container & Styles (Classic Black Background + White Text) */
     #subtitle-container {
       position: absolute;
       bottom: 80px;
@@ -49,21 +49,19 @@
     
     .caption-group {
       position: absolute;
-      background: rgba(12, 12, 14, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 12px;
-      padding: 16px 32px;
-      max-width: 1500px;
+      background: rgba(0, 0, 0, 0.85); /* Solid black background */
+      color: #ffffff; /* White text */
+      border-radius: 8px;
+      padding: 12px 28px;
+      max-width: 1600px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(8px);
-      color: #ffffff;
       font-size: 44px;
       font-weight: 600;
       line-height: 1.4;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
       opacity: 0;
       visibility: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     }
     
     /* Progress Bar overlay */
@@ -140,89 +138,89 @@
   </style>
 </head>
 <body>
-  <div id="root" data-composition-id="main" data-width="1920" data-height="1080" data-start="0" data-duration="251.029">
+  <div id="root" data-composition-id="main" data-width="1920" data-height="1080" data-start="0" data-duration="243.605">
     
     <!-- Audio tracks -->
-    <audio id="audio1" data-start="0.000" data-duration="11.638" data-track-index="2" src="audio/slide_01.wav" data-volume="1"></audio>
-    <audio id="audio2" data-start="11.648" data-duration="12.214" data-track-index="2" src="audio/slide_02.wav" data-volume="1"></audio>
-    <audio id="audio3" data-start="23.872" data-duration="10.038" data-track-index="2" src="audio/slide_03.wav" data-volume="1"></audio>
-    <audio id="audio4" data-start="33.920" data-duration="11.446" data-track-index="2" src="audio/slide_04.wav" data-volume="1"></audio>
-    <audio id="audio5" data-start="45.376" data-duration="12.385" data-track-index="2" src="audio/slide_05.wav" data-volume="1"></audio>
-    <audio id="audio6" data-start="57.771" data-duration="13.409" data-track-index="2" src="audio/slide_06.wav" data-volume="1"></audio>
-    <audio id="audio7" data-start="71.189" data-duration="12.278" data-track-index="2" src="audio/slide_07.wav" data-volume="1"></audio>
-    <audio id="audio8" data-start="83.477" data-duration="12.747" data-track-index="2" src="audio/slide_08.wav" data-volume="1"></audio>
-    <audio id="audio9" data-start="96.235" data-duration="12.918" data-track-index="2" src="audio/slide_09.wav" data-volume="1"></audio>
-    <audio id="audio10" data-start="109.163" data-duration="13.110" data-track-index="2" src="audio/slide_10.wav" data-volume="1"></audio>
-    <audio id="audio11" data-start="122.283" data-duration="12.321" data-track-index="2" src="audio/slide_11.wav" data-volume="1"></audio>
-    <audio id="audio12" data-start="134.613" data-duration="12.982" data-track-index="2" src="audio/slide_12.wav" data-volume="1"></audio>
-    <audio id="audio13" data-start="147.605" data-duration="12.939" data-track-index="2" src="audio/slide_13.wav" data-volume="1"></audio>
-    <audio id="audio14" data-start="160.555" data-duration="13.259" data-track-index="2" src="audio/slide_14.wav" data-volume="1"></audio>
-    <audio id="audio15" data-start="173.824" data-duration="12.534" data-track-index="2" src="audio/slide_15.wav" data-volume="1"></audio>
-    <audio id="audio16" data-start="186.368" data-duration="13.558" data-track-index="2" src="audio/slide_16.wav" data-volume="1"></audio>
-    <audio id="audio17" data-start="199.936" data-duration="12.705" data-track-index="2" src="audio/slide_17.wav" data-volume="1"></audio>
-    <audio id="audio18" data-start="212.651" data-duration="12.854" data-track-index="2" src="audio/slide_18.wav" data-volume="1"></audio>
-    <audio id="audio19" data-start="225.515" data-duration="11.467" data-track-index="2" src="audio/slide_19.wav" data-volume="1"></audio>
-    <audio id="audio20" data-start="236.992" data-duration="14.027" data-track-index="2" src="audio/slide_20.wav" data-volume="1"></audio>
+    <audio id="audio1" data-start="0.000" data-duration="10.251" data-track-index="2" src="audio/slide_01.wav" data-volume="1"></audio>
+    <audio id="audio2" data-start="10.261" data-duration="12.001" data-track-index="2" src="audio/slide_02.wav" data-volume="1"></audio>
+    <audio id="audio3" data-start="22.272" data-duration="9.803" data-track-index="2" src="audio/slide_03.wav" data-volume="1"></audio>
+    <audio id="audio4" data-start="32.085" data-duration="11.446" data-track-index="2" src="audio/slide_04.wav" data-volume="1"></audio>
+    <audio id="audio5" data-start="43.541" data-duration="12.385" data-track-index="2" src="audio/slide_05.wav" data-volume="1"></audio>
+    <audio id="audio6" data-start="55.936" data-duration="13.238" data-track-index="2" src="audio/slide_06.wav" data-volume="1"></audio>
+    <audio id="audio7" data-start="69.184" data-duration="12.278" data-track-index="2" src="audio/slide_07.wav" data-volume="1"></audio>
+    <audio id="audio8" data-start="81.472" data-duration="12.747" data-track-index="2" src="audio/slide_08.wav" data-volume="1"></audio>
+    <audio id="audio9" data-start="94.229" data-duration="12.918" data-track-index="2" src="audio/slide_09.wav" data-volume="1"></audio>
+    <audio id="audio10" data-start="107.157" data-duration="13.110" data-track-index="2" src="audio/slide_10.wav" data-volume="1"></audio>
+    <audio id="audio11" data-start="120.277" data-duration="11.958" data-track-index="2" src="audio/slide_11.wav" data-volume="1"></audio>
+    <audio id="audio12" data-start="132.245" data-duration="12.150" data-track-index="2" src="audio/slide_12.wav" data-volume="1"></audio>
+    <audio id="audio13" data-start="144.405" data-duration="12.491" data-track-index="2" src="audio/slide_13.wav" data-volume="1"></audio>
+    <audio id="audio14" data-start="156.907" data-duration="12.150" data-track-index="2" src="audio/slide_14.wav" data-volume="1"></audio>
+    <audio id="audio15" data-start="169.067" data-duration="11.723" data-track-index="2" src="audio/slide_15.wav" data-volume="1"></audio>
+    <audio id="audio16" data-start="180.800" data-duration="13.003" data-track-index="2" src="audio/slide_16.wav" data-volume="1"></audio>
+    <audio id="audio17" data-start="193.813" data-duration="12.257" data-track-index="2" src="audio/slide_17.wav" data-volume="1"></audio>
+    <audio id="audio18" data-start="206.080" data-duration="12.854" data-track-index="2" src="audio/slide_18.wav" data-volume="1"></audio>
+    <audio id="audio19" data-start="218.944" data-duration="11.467" data-track-index="2" src="audio/slide_19.wav" data-volume="1"></audio>
+    <audio id="audio20" data-start="230.421" data-duration="13.174" data-track-index="2" src="audio/slide_20.wav" data-volume="1"></audio>
     
     <!-- Visual slide scenes - added class "clip" for timeline control -->
-    <div id="scene1" class="scene clip" data-start="0.000" data-duration="11.638" data-track-index="1">
+    <div id="scene1" class="scene clip" data-start="0.000" data-duration="10.251" data-track-index="1">
       <img src="slides/投影片1.JPG" class="slide-img">
     </div>
-    <div id="scene2" class="scene clip" data-start="11.648" data-duration="12.214" data-track-index="1">
+    <div id="scene2" class="scene clip" data-start="10.261" data-duration="12.001" data-track-index="1">
       <img src="slides/投影片2.JPG" class="slide-img">
     </div>
-    <div id="scene3" class="scene clip" data-start="23.872" data-duration="10.038" data-track-index="1">
+    <div id="scene3" class="scene clip" data-start="22.272" data-duration="9.803" data-track-index="1">
       <img src="slides/投影片3.JPG" class="slide-img">
     </div>
-    <div id="scene4" class="scene clip" data-start="33.920" data-duration="11.446" data-track-index="1">
+    <div id="scene4" class="scene clip" data-start="32.085" data-duration="11.446" data-track-index="1">
       <img src="slides/投影片4.JPG" class="slide-img">
     </div>
-    <div id="scene5" class="scene clip" data-start="45.376" data-duration="12.385" data-track-index="1">
+    <div id="scene5" class="scene clip" data-start="43.541" data-duration="12.385" data-track-index="1">
       <img src="slides/投影片5.JPG" class="slide-img">
     </div>
-    <div id="scene6" class="scene clip" data-start="57.771" data-duration="13.409" data-track-index="1">
+    <div id="scene6" class="scene clip" data-start="55.936" data-duration="13.238" data-track-index="1">
       <img src="slides/投影片6.JPG" class="slide-img">
     </div>
-    <div id="scene7" class="scene clip" data-start="71.189" data-duration="12.278" data-track-index="1">
+    <div id="scene7" class="scene clip" data-start="69.184" data-duration="12.278" data-track-index="1">
       <img src="slides/投影片7.JPG" class="slide-img">
     </div>
-    <div id="scene8" class="scene clip" data-start="83.477" data-duration="12.747" data-track-index="1">
+    <div id="scene8" class="scene clip" data-start="81.472" data-duration="12.747" data-track-index="1">
       <img src="slides/投影片8.JPG" class="slide-img">
     </div>
-    <div id="scene9" class="scene clip" data-start="96.235" data-duration="12.918" data-track-index="1">
+    <div id="scene9" class="scene clip" data-start="94.229" data-duration="12.918" data-track-index="1">
       <img src="slides/投影片9.JPG" class="slide-img">
     </div>
-    <div id="scene10" class="scene clip" data-start="109.163" data-duration="13.110" data-track-index="1">
+    <div id="scene10" class="scene clip" data-start="107.157" data-duration="13.110" data-track-index="1">
       <img src="slides/投影片10.JPG" class="slide-img">
     </div>
-    <div id="scene11" class="scene clip" data-start="122.283" data-duration="12.321" data-track-index="1">
+    <div id="scene11" class="scene clip" data-start="120.277" data-duration="11.958" data-track-index="1">
       <img src="slides/投影片11.JPG" class="slide-img">
     </div>
-    <div id="scene12" class="scene clip" data-start="134.613" data-duration="12.982" data-track-index="1">
+    <div id="scene12" class="scene clip" data-start="132.245" data-duration="12.150" data-track-index="1">
       <img src="slides/投影片12.JPG" class="slide-img">
     </div>
-    <div id="scene13" class="scene clip" data-start="147.605" data-duration="12.939" data-track-index="1">
+    <div id="scene13" class="scene clip" data-start="144.405" data-duration="12.491" data-track-index="1">
       <img src="slides/投影片13.JPG" class="slide-img">
     </div>
-    <div id="scene14" class="scene clip" data-start="160.555" data-duration="13.259" data-track-index="1">
+    <div id="scene14" class="scene clip" data-start="156.907" data-duration="12.150" data-track-index="1">
       <img src="slides/投影片14.JPG" class="slide-img">
     </div>
-    <div id="scene15" class="scene clip" data-start="173.824" data-duration="12.534" data-track-index="1">
+    <div id="scene15" class="scene clip" data-start="169.067" data-duration="11.723" data-track-index="1">
       <img src="slides/投影片15.JPG" class="slide-img">
     </div>
-    <div id="scene16" class="scene clip" data-start="186.368" data-duration="13.558" data-track-index="1">
+    <div id="scene16" class="scene clip" data-start="180.800" data-duration="13.003" data-track-index="1">
       <img src="slides/投影片16.JPG" class="slide-img">
     </div>
-    <div id="scene17" class="scene clip" data-start="199.936" data-duration="12.705" data-track-index="1">
+    <div id="scene17" class="scene clip" data-start="193.813" data-duration="12.257" data-track-index="1">
       <img src="slides/投影片17.JPG" class="slide-img">
     </div>
-    <div id="scene18" class="scene clip" data-start="212.651" data-duration="12.854" data-track-index="1">
+    <div id="scene18" class="scene clip" data-start="206.080" data-duration="12.854" data-track-index="1">
       <img src="slides/投影片18.JPG" class="slide-img">
     </div>
-    <div id="scene19" class="scene clip" data-start="225.515" data-duration="11.467" data-track-index="1">
+    <div id="scene19" class="scene clip" data-start="218.944" data-duration="11.467" data-track-index="1">
       <img src="slides/投影片19.JPG" class="slide-img">
     </div>
-    <div id="scene20" class="scene clip" data-start="236.992" data-duration="14.027" data-track-index="1">
+    <div id="scene20" class="scene clip" data-start="230.421" data-duration="13.174" data-track-index="1">
       <img src="slides/投影片20.JPG" class="slide-img">
     </div>
     
@@ -432,1185 +430,1185 @@
     var tl = gsap.timeline({ paused: true });
     
     // Animate progress bar linearly over the entire video
-    tl.to("#progress-bar", { width: "100%", duration: 251.029, ease: "none" }, 0);
+    tl.to("#progress-bar", { width: "100%", duration: 243.605, ease: "none" }, 0);
     
     // HUD CRISP-DM phases active triggers
     tl.set("#phase-overview", { className: "hud-phase active" }, 0.000);
-    tl.set("#phase-overview", { className: "hud-phase" }, 33.920);
-    tl.set("#phase-bu", { className: "hud-phase active" }, 33.920);
-    tl.set("#phase-bu", { className: "hud-phase" }, 71.189);
-    tl.set("#phase-du", { className: "hud-phase active" }, 71.189);
-    tl.set("#phase-du", { className: "hud-phase" }, 122.283);
-    tl.set("#phase-dp", { className: "hud-phase active" }, 122.283);
-    tl.set("#phase-dp", { className: "hud-phase" }, 173.824);
-    tl.set("#phase-md", { className: "hud-phase active" }, 173.824);
-    tl.set("#phase-md", { className: "hud-phase" }, 186.368);
-    tl.set("#phase-ev", { className: "hud-phase active" }, 186.368);
-    tl.set("#phase-ev", { className: "hud-phase" }, 225.515);
-    tl.set("#phase-de", { className: "hud-phase active" }, 225.515);
-    tl.set("#phase-de", { className: "hud-phase" }, 251.029);
+    tl.set("#phase-overview", { className: "hud-phase" }, 32.085);
+    tl.set("#phase-bu", { className: "hud-phase active" }, 32.085);
+    tl.set("#phase-bu", { className: "hud-phase" }, 69.184);
+    tl.set("#phase-du", { className: "hud-phase active" }, 69.184);
+    tl.set("#phase-du", { className: "hud-phase" }, 120.277);
+    tl.set("#phase-dp", { className: "hud-phase active" }, 120.277);
+    tl.set("#phase-dp", { className: "hud-phase" }, 169.067);
+    tl.set("#phase-md", { className: "hud-phase active" }, 169.067);
+    tl.set("#phase-md", { className: "hud-phase" }, 180.800);
+    tl.set("#phase-ev", { className: "hud-phase active" }, 180.800);
+    tl.set("#phase-ev", { className: "hud-phase" }, 230.421);
+    tl.set("#phase-de", { className: "hud-phase active" }, 230.421);
+    tl.set("#phase-de", { className: "hud-phase" }, 243.605);
 
     // Scene Transitions (Push Slide)
-    // Transition: Slide 1 -> Slide 2 at 11.648s
-    tl.to("#scene1", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 11.648);
-    tl.fromTo("#scene2", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 11.648);
+    // Transition: Slide 1 -> Slide 2 at 10.261s
+    tl.to("#scene1", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 10.261);
+    tl.fromTo("#scene2", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 10.261);
 
-    // Transition: Slide 2 -> Slide 3 at 23.872s
-    tl.to("#scene2", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 23.872);
-    tl.fromTo("#scene3", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 23.872);
+    // Transition: Slide 2 -> Slide 3 at 22.272s
+    tl.to("#scene2", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 22.272);
+    tl.fromTo("#scene3", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 22.272);
 
-    // Transition: Slide 3 -> Slide 4 at 33.920s
-    tl.to("#scene3", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 33.920);
-    tl.fromTo("#scene4", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 33.920);
+    // Transition: Slide 3 -> Slide 4 at 32.085s
+    tl.to("#scene3", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 32.085);
+    tl.fromTo("#scene4", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 32.085);
 
-    // Transition: Slide 4 -> Slide 5 at 45.376s
-    tl.to("#scene4", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 45.376);
-    tl.fromTo("#scene5", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 45.376);
+    // Transition: Slide 4 -> Slide 5 at 43.541s
+    tl.to("#scene4", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 43.541);
+    tl.fromTo("#scene5", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 43.541);
 
-    // Transition: Slide 5 -> Slide 6 at 57.771s
-    tl.to("#scene5", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 57.771);
-    tl.fromTo("#scene6", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 57.771);
+    // Transition: Slide 5 -> Slide 6 at 55.936s
+    tl.to("#scene5", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 55.936);
+    tl.fromTo("#scene6", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 55.936);
 
-    // Transition: Slide 6 -> Slide 7 at 71.189s
-    tl.to("#scene6", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 71.189);
-    tl.fromTo("#scene7", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 71.189);
+    // Transition: Slide 6 -> Slide 7 at 69.184s
+    tl.to("#scene6", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 69.184);
+    tl.fromTo("#scene7", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 69.184);
 
-    // Transition: Slide 7 -> Slide 8 at 83.477s
-    tl.to("#scene7", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 83.477);
-    tl.fromTo("#scene8", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 83.477);
+    // Transition: Slide 7 -> Slide 8 at 81.472s
+    tl.to("#scene7", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 81.472);
+    tl.fromTo("#scene8", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 81.472);
 
-    // Transition: Slide 8 -> Slide 9 at 96.235s
-    tl.to("#scene8", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 96.235);
-    tl.fromTo("#scene9", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 96.235);
+    // Transition: Slide 8 -> Slide 9 at 94.229s
+    tl.to("#scene8", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 94.229);
+    tl.fromTo("#scene9", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 94.229);
 
-    // Transition: Slide 9 -> Slide 10 at 109.163s
-    tl.to("#scene9", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 109.163);
-    tl.fromTo("#scene10", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 109.163);
+    // Transition: Slide 9 -> Slide 10 at 107.157s
+    tl.to("#scene9", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 107.157);
+    tl.fromTo("#scene10", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 107.157);
 
-    // Transition: Slide 10 -> Slide 11 at 122.283s
-    tl.to("#scene10", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 122.283);
-    tl.fromTo("#scene11", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 122.283);
+    // Transition: Slide 10 -> Slide 11 at 120.277s
+    tl.to("#scene10", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 120.277);
+    tl.fromTo("#scene11", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 120.277);
 
-    // Transition: Slide 11 -> Slide 12 at 134.613s
-    tl.to("#scene11", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 134.613);
-    tl.fromTo("#scene12", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 134.613);
+    // Transition: Slide 11 -> Slide 12 at 132.245s
+    tl.to("#scene11", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 132.245);
+    tl.fromTo("#scene12", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 132.245);
 
-    // Transition: Slide 12 -> Slide 13 at 147.605s
-    tl.to("#scene12", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 147.605);
-    tl.fromTo("#scene13", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 147.605);
+    // Transition: Slide 12 -> Slide 13 at 144.405s
+    tl.to("#scene12", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 144.405);
+    tl.fromTo("#scene13", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 144.405);
 
-    // Transition: Slide 13 -> Slide 14 at 160.555s
-    tl.to("#scene13", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 160.555);
-    tl.fromTo("#scene14", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 160.555);
+    // Transition: Slide 13 -> Slide 14 at 156.907s
+    tl.to("#scene13", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 156.907);
+    tl.fromTo("#scene14", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 156.907);
 
-    // Transition: Slide 14 -> Slide 15 at 173.824s
-    tl.to("#scene14", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 173.824);
-    tl.fromTo("#scene15", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 173.824);
+    // Transition: Slide 14 -> Slide 15 at 169.067s
+    tl.to("#scene14", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 169.067);
+    tl.fromTo("#scene15", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 169.067);
 
-    // Transition: Slide 15 -> Slide 16 at 186.368s
-    tl.to("#scene15", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 186.368);
-    tl.fromTo("#scene16", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 186.368);
+    // Transition: Slide 15 -> Slide 16 at 180.800s
+    tl.to("#scene15", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 180.800);
+    tl.fromTo("#scene16", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 180.800);
 
-    // Transition: Slide 16 -> Slide 17 at 199.936s
-    tl.to("#scene16", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 199.936);
-    tl.fromTo("#scene17", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 199.936);
+    // Transition: Slide 16 -> Slide 17 at 193.813s
+    tl.to("#scene16", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 193.813);
+    tl.fromTo("#scene17", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 193.813);
 
-    // Transition: Slide 17 -> Slide 18 at 212.651s
-    tl.to("#scene17", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 212.651);
-    tl.fromTo("#scene18", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 212.651);
+    // Transition: Slide 17 -> Slide 18 at 206.080s
+    tl.to("#scene17", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 206.080);
+    tl.fromTo("#scene18", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 206.080);
 
-    // Transition: Slide 18 -> Slide 19 at 225.515s
-    tl.to("#scene18", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 225.515);
-    tl.fromTo("#scene19", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 225.515);
+    // Transition: Slide 18 -> Slide 19 at 218.944s
+    tl.to("#scene18", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 218.944);
+    tl.fromTo("#scene19", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 218.944);
 
-    // Transition: Slide 19 -> Slide 20 at 236.992s
-    tl.to("#scene19", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 236.992);
-    tl.fromTo("#scene20", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 236.992);
+    // Transition: Slide 19 -> Slide 20 at 230.421s
+    tl.to("#scene19", { x: -1920, duration: 0.500, ease: "power3.inOut" }, 230.421);
+    tl.fromTo("#scene20", { x: 1920, opacity: 1 }, { x: 0, duration: 0.500, ease: "power3.inOut" }, 230.421);
 
     // Final scene fade-out on child slide-img (safe from clip errors)
-    tl.to("#scene20 .slide-img", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 250.029);
-    tl.to("#hud-container", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 250.029);
-    tl.to("#progress-container", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 250.029);
+    tl.to("#scene20 .slide-img", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 242.605);
+    tl.to("#hud-container", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 242.605);
+    tl.to("#progress-container", { opacity: 0, duration: 1.000, ease: "power2.inOut" }, 242.605);
     
     // Visibility hard kills for HUD and progress overlays (not clips, so this is fully allowed)
-    tl.set("#hud-container", { visibility: "hidden" }, 251.029);
-    tl.set("#progress-container", { visibility: "hidden" }, 251.029);
+    tl.set("#hud-container", { visibility: "hidden" }, 243.605);
+    tl.set("#progress-container", { visibility: "hidden" }, 243.605);
 
     // Subtitle caption timings
 
-      // Caption 0: "歡迎收看" (dur: 0.656s)
+      // Caption 0: "歡迎收看" (dur: 0.578s)
       tl.set("#cg-0", { visibility: "visible" }, 0.000);
-      tl.to("#cg-0", { opacity: 1, y: 0, duration: 0.150 }, 0.000);
-      tl.to("#cg-0", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 0.536);
-      tl.set("#cg-0", { visibility: "hidden" }, 0.656);
+      tl.to("#cg-0", { opacity: 1, duration: 0.100 }, 0.000);
+      tl.to("#cg-0", { opacity: 0, duration: 0.100 }, 0.478);
+      tl.set("#cg-0", { visibility: "hidden" }, 0.578);
 
-      // Caption 1: "Kaggle" (dur: 0.985s)
-      tl.set("#cg-1", { visibility: "visible" }, 0.656);
-      tl.to("#cg-1", { opacity: 1, y: 0, duration: 0.150 }, 0.656);
-      tl.to("#cg-1", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 1.521);
-      tl.set("#cg-1", { visibility: "hidden" }, 1.641);
+      // Caption 1: "Kaggle" (dur: 0.867s)
+      tl.set("#cg-1", { visibility: "visible" }, 0.578);
+      tl.to("#cg-1", { opacity: 1, duration: 0.100 }, 0.578);
+      tl.to("#cg-1", { opacity: 0, duration: 0.100 }, 1.345);
+      tl.set("#cg-1", { visibility: "hidden" }, 1.445);
 
-      // Caption 2: "50" (dur: 0.328s)
-      tl.set("#cg-2", { visibility: "visible" }, 1.641);
-      tl.to("#cg-2", { opacity: 1, y: 0, duration: 0.150 }, 1.641);
-      tl.to("#cg-2", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 1.849);
-      tl.set("#cg-2", { visibility: "hidden" }, 1.969);
+      // Caption 2: "50" (dur: 0.289s)
+      tl.set("#cg-2", { visibility: "visible" }, 1.445);
+      tl.to("#cg-2", { opacity: 1, duration: 0.087 }, 1.445);
+      tl.to("#cg-2", { opacity: 0, duration: 0.087 }, 1.647);
+      tl.set("#cg-2", { visibility: "hidden" }, 1.734);
 
-      // Caption 3: "Startups" (dur: 1.312s)
-      tl.set("#cg-3", { visibility: "visible" }, 1.969);
-      tl.to("#cg-3", { opacity: 1, y: 0, duration: 0.150 }, 1.969);
-      tl.to("#cg-3", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 3.161);
-      tl.set("#cg-3", { visibility: "hidden" }, 3.281);
+      // Caption 3: "Startups" (dur: 1.157s)
+      tl.set("#cg-3", { visibility: "visible" }, 1.734);
+      tl.to("#cg-3", { opacity: 1, duration: 0.100 }, 1.734);
+      tl.to("#cg-3", { opacity: 0, duration: 0.100 }, 2.791);
+      tl.set("#cg-3", { visibility: "hidden" }, 2.891);
 
-      // Caption 4: "資料分析專案簡報。" (dur: 1.313s)
-      tl.set("#cg-4", { visibility: "visible" }, 3.281);
-      tl.to("#cg-4", { opacity: 1, y: 0, duration: 0.150 }, 3.281);
-      tl.to("#cg-4", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 4.474);
-      tl.set("#cg-4", { visibility: "hidden" }, 4.594);
+      // Caption 4: "資料分析專案簡報。" (dur: 1.156s)
+      tl.set("#cg-4", { visibility: "visible" }, 2.891);
+      tl.to("#cg-4", { opacity: 1, duration: 0.100 }, 2.891);
+      tl.to("#cg-4", { opacity: 0, duration: 0.100 }, 3.947);
+      tl.set("#cg-4", { visibility: "hidden" }, 4.047);
 
-      // Caption 5: "本專案將基於" (dur: 0.984s)
-      tl.set("#cg-5", { visibility: "visible" }, 4.594);
-      tl.to("#cg-5", { opacity: 1, y: 0, duration: 0.150 }, 4.594);
-      tl.to("#cg-5", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 5.458);
-      tl.set("#cg-5", { visibility: "hidden" }, 5.578);
+      // Caption 5: "本專案將基於" (dur: 0.867s)
+      tl.set("#cg-5", { visibility: "visible" }, 4.047);
+      tl.to("#cg-5", { opacity: 1, duration: 0.100 }, 4.047);
+      tl.to("#cg-5", { opacity: 0, duration: 0.100 }, 4.814);
+      tl.set("#cg-5", { visibility: "hidden" }, 4.914);
 
-      // Caption 6: "CRISP-DM" (dur: 1.148s)
-      tl.set("#cg-6", { visibility: "visible" }, 5.578);
-      tl.to("#cg-6", { opacity: 1, y: 0, duration: 0.150 }, 5.578);
-      tl.to("#cg-6", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 6.606);
-      tl.set("#cg-6", { visibility: "hidden" }, 6.726);
+      // Caption 6: "CRISP-DM" (dur: 1.012s)
+      tl.set("#cg-6", { visibility: "visible" }, 4.914);
+      tl.to("#cg-6", { opacity: 1, duration: 0.100 }, 4.914);
+      tl.to("#cg-6", { opacity: 0, duration: 0.100 }, 5.826);
+      tl.set("#cg-6", { visibility: "hidden" }, 5.926);
 
-      // Caption 7: "與" (dur: 0.164s)
-      tl.set("#cg-7", { visibility: "visible" }, 6.726);
-      tl.to("#cg-7", { opacity: 1, y: 0, duration: 0.066 }, 6.726);
-      tl.to("#cg-7", { opacity: 0, y: -5, duration: 0.066, ease: "power2.in" }, 6.824);
-      tl.set("#cg-7", { visibility: "hidden" }, 6.890);
+      // Caption 7: "與" (dur: 0.144s)
+      tl.set("#cg-7", { visibility: "visible" }, 5.926);
+      tl.to("#cg-7", { opacity: 1, duration: 0.043 }, 5.926);
+      tl.to("#cg-7", { opacity: 0, duration: 0.043 }, 6.027);
+      tl.set("#cg-7", { visibility: "hidden" }, 6.070);
 
-      // Caption 8: "Scikit-Learn，" (dur: 1.805s)
-      tl.set("#cg-8", { visibility: "visible" }, 6.890);
-      tl.to("#cg-8", { opacity: 1, y: 0, duration: 0.150 }, 6.890);
-      tl.to("#cg-8", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 8.575);
-      tl.set("#cg-8", { visibility: "hidden" }, 8.695);
+      // Caption 8: "Scikit-Learn，" (dur: 1.590s)
+      tl.set("#cg-8", { visibility: "visible" }, 6.070);
+      tl.to("#cg-8", { opacity: 1, duration: 0.100 }, 6.070);
+      tl.to("#cg-8", { opacity: 0, duration: 0.100 }, 7.560);
+      tl.set("#cg-8", { visibility: "hidden" }, 7.660);
 
-      // Caption 9: "為您呈現完整的機器" (dur: 1.476s)
-      tl.set("#cg-9", { visibility: "visible" }, 8.695);
-      tl.to("#cg-9", { opacity: 1, y: 0, duration: 0.150 }, 8.695);
-      tl.to("#cg-9", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 10.051);
-      tl.set("#cg-9", { visibility: "hidden" }, 10.171);
+      // Caption 9: "為您呈現完整的機器" (dur: 1.301s)
+      tl.set("#cg-9", { visibility: "visible" }, 7.660);
+      tl.to("#cg-9", { opacity: 1, duration: 0.100 }, 7.660);
+      tl.to("#cg-9", { opacity: 0, duration: 0.100 }, 8.861);
+      tl.set("#cg-9", { visibility: "hidden" }, 8.961);
 
-      // Caption 10: "學習分析與預測流程。" (dur: 1.477s)
-      tl.set("#cg-10", { visibility: "visible" }, 10.171);
-      tl.to("#cg-10", { opacity: 1, y: 0, duration: 0.150 }, 10.171);
-      tl.to("#cg-10", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 11.528);
-      tl.set("#cg-10", { visibility: "hidden" }, 11.648);
+      // Caption 10: "學習分析與預測流程。" (dur: 1.300s)
+      tl.set("#cg-10", { visibility: "visible" }, 8.961);
+      tl.to("#cg-10", { opacity: 1, duration: 0.100 }, 8.961);
+      tl.to("#cg-10", { opacity: 0, duration: 0.100 }, 10.161);
+      tl.set("#cg-10", { visibility: "hidden" }, 10.261);
 
-      // Caption 11: "本專案名為" (dur: 0.657s)
-      tl.set("#cg-11", { visibility: "visible" }, 11.648);
-      tl.to("#cg-11", { opacity: 1, y: 0, duration: 0.150 }, 11.648);
-      tl.to("#cg-11", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 12.185);
-      tl.set("#cg-11", { visibility: "hidden" }, 12.305);
+      // Caption 11: "本專案名為" (dur: 0.646s)
+      tl.set("#cg-11", { visibility: "visible" }, 10.261);
+      tl.to("#cg-11", { opacity: 1, duration: 0.100 }, 10.261);
+      tl.to("#cg-11", { opacity: 0, duration: 0.100 }, 10.807);
+      tl.set("#cg-11", { visibility: "hidden" }, 10.907);
 
-      // Caption 12: "Predicting" (dur: 1.315s)
-      tl.set("#cg-12", { visibility: "visible" }, 12.305);
-      tl.to("#cg-12", { opacity: 1, y: 0, duration: 0.150 }, 12.305);
-      tl.to("#cg-12", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 13.500);
-      tl.set("#cg-12", { visibility: "hidden" }, 13.620);
+      // Caption 12: "Predicting" (dur: 1.291s)
+      tl.set("#cg-12", { visibility: "visible" }, 10.907);
+      tl.to("#cg-12", { opacity: 1, duration: 0.100 }, 10.907);
+      tl.to("#cg-12", { opacity: 0, duration: 0.100 }, 12.098);
+      tl.set("#cg-12", { visibility: "hidden" }, 12.198);
 
-      // Caption 13: "Startup" (dur: 0.920s)
-      tl.set("#cg-13", { visibility: "visible" }, 13.620);
-      tl.to("#cg-13", { opacity: 1, y: 0, duration: 0.150 }, 13.620);
-      tl.to("#cg-13", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 14.420);
-      tl.set("#cg-13", { visibility: "hidden" }, 14.540);
+      // Caption 13: "Startup" (dur: 0.904s)
+      tl.set("#cg-13", { visibility: "visible" }, 12.198);
+      tl.to("#cg-13", { opacity: 1, duration: 0.100 }, 12.198);
+      tl.to("#cg-13", { opacity: 0, duration: 0.100 }, 13.002);
+      tl.set("#cg-13", { visibility: "hidden" }, 13.102);
 
-      // Caption 14: "Profit" (dur: 0.788s)
-      tl.set("#cg-14", { visibility: "visible" }, 14.540);
-      tl.to("#cg-14", { opacity: 1, y: 0, duration: 0.150 }, 14.540);
-      tl.to("#cg-14", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 15.208);
-      tl.set("#cg-14", { visibility: "hidden" }, 15.328);
+      // Caption 14: "Profit" (dur: 0.775s)
+      tl.set("#cg-14", { visibility: "visible" }, 13.102);
+      tl.to("#cg-14", { opacity: 1, duration: 0.100 }, 13.102);
+      tl.to("#cg-14", { opacity: 0, duration: 0.100 }, 13.777);
+      tl.set("#cg-14", { visibility: "hidden" }, 13.877);
 
-      // Caption 15: "Using" (dur: 0.658s)
-      tl.set("#cg-15", { visibility: "visible" }, 15.328);
-      tl.to("#cg-15", { opacity: 1, y: 0, duration: 0.150 }, 15.328);
-      tl.to("#cg-15", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 15.866);
-      tl.set("#cg-15", { visibility: "hidden" }, 15.986);
+      // Caption 15: "Using" (dur: 0.646s)
+      tl.set("#cg-15", { visibility: "visible" }, 13.877);
+      tl.to("#cg-15", { opacity: 1, duration: 0.100 }, 13.877);
+      tl.to("#cg-15", { opacity: 0, duration: 0.100 }, 14.423);
+      tl.set("#cg-15", { visibility: "hidden" }, 14.523);
 
-      // Caption 16: "Machine" (dur: 0.920s)
-      tl.set("#cg-16", { visibility: "visible" }, 15.986);
-      tl.to("#cg-16", { opacity: 1, y: 0, duration: 0.150 }, 15.986);
-      tl.to("#cg-16", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 16.786);
-      tl.set("#cg-16", { visibility: "hidden" }, 16.906);
+      // Caption 16: "Machine" (dur: 0.904s)
+      tl.set("#cg-16", { visibility: "visible" }, 14.523);
+      tl.to("#cg-16", { opacity: 1, duration: 0.100 }, 14.523);
+      tl.to("#cg-16", { opacity: 0, duration: 0.100 }, 15.327);
+      tl.set("#cg-16", { visibility: "hidden" }, 15.427);
 
-      // Caption 17: "Learning，" (dur: 1.051s)
-      tl.set("#cg-17", { visibility: "visible" }, 16.906);
-      tl.to("#cg-17", { opacity: 1, y: 0, duration: 0.150 }, 16.906);
-      tl.to("#cg-17", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 17.837);
-      tl.set("#cg-17", { visibility: "hidden" }, 17.957);
+      // Caption 17: "Learning，" (dur: 1.033s)
+      tl.set("#cg-17", { visibility: "visible" }, 15.427);
+      tl.to("#cg-17", { opacity: 1, duration: 0.100 }, 15.427);
+      tl.to("#cg-17", { opacity: 0, duration: 0.100 }, 16.360);
+      tl.set("#cg-17", { visibility: "hidden" }, 16.460);
 
-      // Caption 18: "使用" (dur: 0.263s)
-      tl.set("#cg-18", { visibility: "visible" }, 17.957);
-      tl.to("#cg-18", { opacity: 1, y: 0, duration: 0.105 }, 17.957);
-      tl.to("#cg-18", { opacity: 0, y: -5, duration: 0.105, ease: "power2.in" }, 18.115);
-      tl.set("#cg-18", { visibility: "hidden" }, 18.220);
+      // Caption 18: "使用" (dur: 0.258s)
+      tl.set("#cg-18", { visibility: "visible" }, 16.460);
+      tl.to("#cg-18", { opacity: 1, duration: 0.077 }, 16.460);
+      tl.to("#cg-18", { opacity: 0, duration: 0.077 }, 16.641);
+      tl.set("#cg-18", { visibility: "hidden" }, 16.718);
 
-      // Caption 19: "Kaggle" (dur: 0.789s)
-      tl.set("#cg-19", { visibility: "visible" }, 18.220);
-      tl.to("#cg-19", { opacity: 1, y: 0, duration: 0.150 }, 18.220);
-      tl.to("#cg-19", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 18.889);
-      tl.set("#cg-19", { visibility: "hidden" }, 19.009);
+      // Caption 19: "Kaggle" (dur: 0.775s)
+      tl.set("#cg-19", { visibility: "visible" }, 16.718);
+      tl.to("#cg-19", { opacity: 1, duration: 0.100 }, 16.718);
+      tl.to("#cg-19", { opacity: 0, duration: 0.100 }, 17.393);
+      tl.set("#cg-19", { visibility: "hidden" }, 17.493);
 
-      // Caption 20: "的" (dur: 0.131s)
-      tl.set("#cg-20", { visibility: "visible" }, 19.009);
-      tl.to("#cg-20", { opacity: 1, y: 0, duration: 0.052 }, 19.009);
-      tl.to("#cg-20", { opacity: 0, y: -5, duration: 0.052, ease: "power2.in" }, 19.088);
-      tl.set("#cg-20", { visibility: "hidden" }, 19.140);
+      // Caption 20: "的" (dur: 0.129s)
+      tl.set("#cg-20", { visibility: "visible" }, 17.493);
+      tl.to("#cg-20", { opacity: 1, duration: 0.039 }, 17.493);
+      tl.to("#cg-20", { opacity: 0, duration: 0.039 }, 17.583);
+      tl.set("#cg-20", { visibility: "hidden" }, 17.622);
 
-      // Caption 21: "50" (dur: 0.263s)
-      tl.set("#cg-21", { visibility: "visible" }, 19.140);
-      tl.to("#cg-21", { opacity: 1, y: 0, duration: 0.105 }, 19.140);
-      tl.to("#cg-21", { opacity: 0, y: -5, duration: 0.105, ease: "power2.in" }, 19.298);
-      tl.set("#cg-21", { visibility: "hidden" }, 19.403);
+      // Caption 21: "50" (dur: 0.259s)
+      tl.set("#cg-21", { visibility: "visible" }, 17.622);
+      tl.to("#cg-21", { opacity: 1, duration: 0.078 }, 17.622);
+      tl.to("#cg-21", { opacity: 0, duration: 0.078 }, 17.803);
+      tl.set("#cg-21", { visibility: "hidden" }, 17.881);
 
-      // Caption 22: "家初創企業數據集，" (dur: 1.052s)
-      tl.set("#cg-22", { visibility: "visible" }, 19.403);
-      tl.to("#cg-22", { opacity: 1, y: 0, duration: 0.150 }, 19.403);
-      tl.to("#cg-22", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 20.335);
-      tl.set("#cg-22", { visibility: "hidden" }, 20.455);
+      // Caption 22: "家初創企業數據集，" (dur: 1.033s)
+      tl.set("#cg-22", { visibility: "visible" }, 17.881);
+      tl.to("#cg-22", { opacity: 1, duration: 0.100 }, 17.881);
+      tl.to("#cg-22", { opacity: 0, duration: 0.100 }, 18.814);
+      tl.set("#cg-22", { visibility: "hidden" }, 18.914);
 
-      // Caption 23: "建立一個可解釋的獲利預測模型，" (dur: 1.840s)
-      tl.set("#cg-23", { visibility: "visible" }, 20.455);
-      tl.to("#cg-23", { opacity: 1, y: 0, duration: 0.150 }, 20.455);
-      tl.to("#cg-23", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 22.175);
-      tl.set("#cg-23", { visibility: "hidden" }, 22.295);
+      // Caption 23: "建立一個可解釋的獲利預測模型，" (dur: 1.808s)
+      tl.set("#cg-23", { visibility: "visible" }, 18.914);
+      tl.to("#cg-23", { opacity: 1, duration: 0.100 }, 18.914);
+      tl.to("#cg-23", { opacity: 0, duration: 0.100 }, 20.622);
+      tl.set("#cg-23", { visibility: "hidden" }, 20.722);
 
-      // Caption 24: "以解答關鍵的商業決策問題。" (dur: 1.577s)
-      tl.set("#cg-24", { visibility: "visible" }, 22.295);
-      tl.to("#cg-24", { opacity: 1, y: 0, duration: 0.150 }, 22.295);
-      tl.to("#cg-24", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 23.752);
-      tl.set("#cg-24", { visibility: "hidden" }, 23.872);
+      // Caption 24: "以解答關鍵的商業決策問題。" (dur: 1.550s)
+      tl.set("#cg-24", { visibility: "visible" }, 20.722);
+      tl.to("#cg-24", { opacity: 1, duration: 0.100 }, 20.722);
+      tl.to("#cg-24", { opacity: 0, duration: 0.100 }, 22.172);
+      tl.set("#cg-24", { visibility: "hidden" }, 22.272);
 
-      // Caption 25: "專案採用" (dur: 0.855s)
-      tl.set("#cg-25", { visibility: "visible" }, 23.872);
-      tl.to("#cg-25", { opacity: 1, y: 0, duration: 0.150 }, 23.872);
-      tl.to("#cg-25", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 24.607);
-      tl.set("#cg-25", { visibility: "hidden" }, 24.727);
+      // Caption 25: "專案採用" (dur: 0.835s)
+      tl.set("#cg-25", { visibility: "visible" }, 22.272);
+      tl.to("#cg-25", { opacity: 1, duration: 0.100 }, 22.272);
+      tl.to("#cg-25", { opacity: 0, duration: 0.100 }, 23.007);
+      tl.set("#cg-25", { visibility: "hidden" }, 23.107);
 
-      // Caption 26: "CRISP-DM" (dur: 1.497s)
-      tl.set("#cg-26", { visibility: "visible" }, 24.727);
-      tl.to("#cg-26", { opacity: 1, y: 0, duration: 0.150 }, 24.727);
-      tl.to("#cg-26", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 26.104);
-      tl.set("#cg-26", { visibility: "hidden" }, 26.224);
+      // Caption 26: "CRISP-DM" (dur: 1.462s)
+      tl.set("#cg-26", { visibility: "visible" }, 23.107);
+      tl.to("#cg-26", { opacity: 1, duration: 0.100 }, 23.107);
+      tl.to("#cg-26", { opacity: 0, duration: 0.100 }, 24.469);
+      tl.set("#cg-26", { visibility: "hidden" }, 24.569);
 
-      // Caption 27: "框架，" (dur: 0.427s)
-      tl.set("#cg-27", { visibility: "visible" }, 26.224);
-      tl.to("#cg-27", { opacity: 1, y: 0, duration: 0.150 }, 26.224);
-      tl.to("#cg-27", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 26.531);
-      tl.set("#cg-27", { visibility: "hidden" }, 26.651);
+      // Caption 27: "框架，" (dur: 0.417s)
+      tl.set("#cg-27", { visibility: "visible" }, 24.569);
+      tl.to("#cg-27", { opacity: 1, duration: 0.100 }, 24.569);
+      tl.to("#cg-27", { opacity: 0, duration: 0.100 }, 24.886);
+      tl.set("#cg-27", { visibility: "hidden" }, 24.986);
 
-      // Caption 28: "從商業理解開始，" (dur: 1.497s)
-      tl.set("#cg-28", { visibility: "visible" }, 26.651);
-      tl.to("#cg-28", { opacity: 1, y: 0, duration: 0.150 }, 26.651);
-      tl.to("#cg-28", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 28.028);
-      tl.set("#cg-28", { visibility: "hidden" }, 28.148);
+      // Caption 28: "從商業理解開始，" (dur: 1.462s)
+      tl.set("#cg-28", { visibility: "visible" }, 24.986);
+      tl.to("#cg-28", { opacity: 1, duration: 0.100 }, 24.986);
+      tl.to("#cg-28", { opacity: 0, duration: 0.100 }, 26.348);
+      tl.set("#cg-28", { visibility: "hidden" }, 26.448);
 
-      // Caption 29: "經歷數據理解、" (dur: 1.282s)
-      tl.set("#cg-29", { visibility: "visible" }, 28.148);
-      tl.to("#cg-29", { opacity: 1, y: 0, duration: 0.150 }, 28.148);
-      tl.to("#cg-29", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 29.310);
-      tl.set("#cg-29", { visibility: "hidden" }, 29.430);
+      // Caption 29: "經歷數據理解、" (dur: 1.253s)
+      tl.set("#cg-29", { visibility: "visible" }, 26.448);
+      tl.to("#cg-29", { opacity: 1, duration: 0.100 }, 26.448);
+      tl.to("#cg-29", { opacity: 0, duration: 0.100 }, 27.601);
+      tl.set("#cg-29", { visibility: "hidden" }, 27.701);
 
-      // Caption 30: "數據準備、" (dur: 0.856s)
-      tl.set("#cg-30", { visibility: "visible" }, 29.430);
-      tl.to("#cg-30", { opacity: 1, y: 0, duration: 0.150 }, 29.430);
-      tl.to("#cg-30", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 30.166);
-      tl.set("#cg-30", { visibility: "hidden" }, 30.286);
+      // Caption 30: "數據準備、" (dur: 0.835s)
+      tl.set("#cg-30", { visibility: "visible" }, 27.701);
+      tl.to("#cg-30", { opacity: 1, duration: 0.100 }, 27.701);
+      tl.to("#cg-30", { opacity: 0, duration: 0.100 }, 28.436);
+      tl.set("#cg-30", { visibility: "hidden" }, 28.536);
 
-      // Caption 31: "建模、" (dur: 0.427s)
-      tl.set("#cg-31", { visibility: "visible" }, 30.286);
-      tl.to("#cg-31", { opacity: 1, y: 0, duration: 0.150 }, 30.286);
-      tl.to("#cg-31", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 30.593);
-      tl.set("#cg-31", { visibility: "hidden" }, 30.713);
+      // Caption 31: "建模、" (dur: 0.417s)
+      tl.set("#cg-31", { visibility: "visible" }, 28.536);
+      tl.to("#cg-31", { opacity: 1, duration: 0.100 }, 28.536);
+      tl.to("#cg-31", { opacity: 0, duration: 0.100 }, 28.853);
+      tl.set("#cg-31", { visibility: "hidden" }, 28.953);
 
-      // Caption 32: "評估，" (dur: 0.428s)
-      tl.set("#cg-32", { visibility: "visible" }, 30.713);
-      tl.to("#cg-32", { opacity: 1, y: 0, duration: 0.150 }, 30.713);
-      tl.to("#cg-32", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 31.021);
-      tl.set("#cg-32", { visibility: "hidden" }, 31.141);
+      // Caption 32: "評估，" (dur: 0.418s)
+      tl.set("#cg-32", { visibility: "visible" }, 28.953);
+      tl.to("#cg-32", { opacity: 1, duration: 0.100 }, 28.953);
+      tl.to("#cg-32", { opacity: 0, duration: 0.100 }, 29.271);
+      tl.set("#cg-32", { visibility: "hidden" }, 29.371);
 
-      // Caption 33: "最終進行部署並提取商業洞察。" (dur: 2.779s)
-      tl.set("#cg-33", { visibility: "visible" }, 31.141);
-      tl.to("#cg-33", { opacity: 1, y: 0, duration: 0.150 }, 31.141);
-      tl.to("#cg-33", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 33.800);
-      tl.set("#cg-33", { visibility: "hidden" }, 33.920);
+      // Caption 33: "最終進行部署並提取商業洞察。" (dur: 2.714s)
+      tl.set("#cg-33", { visibility: "visible" }, 29.371);
+      tl.to("#cg-33", { opacity: 1, duration: 0.100 }, 29.371);
+      tl.to("#cg-33", { opacity: 0, duration: 0.100 }, 31.985);
+      tl.set("#cg-33", { visibility: "hidden" }, 32.085);
 
       // Caption 34: "第一階段是商業理解。" (dur: 1.748s)
-      tl.set("#cg-34", { visibility: "visible" }, 33.920);
-      tl.to("#cg-34", { opacity: 1, y: 0, duration: 0.150 }, 33.920);
-      tl.to("#cg-34", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 35.548);
-      tl.set("#cg-34", { visibility: "hidden" }, 35.668);
+      tl.set("#cg-34", { visibility: "visible" }, 32.085);
+      tl.to("#cg-34", { opacity: 1, duration: 0.100 }, 32.085);
+      tl.to("#cg-34", { opacity: 0, duration: 0.100 }, 33.733);
+      tl.set("#cg-34", { visibility: "hidden" }, 33.833);
 
       // Caption 35: "企業管理者最關心" (dur: 1.553s)
-      tl.set("#cg-35", { visibility: "visible" }, 35.668);
-      tl.to("#cg-35", { opacity: 1, y: 0, duration: 0.150 }, 35.668);
-      tl.to("#cg-35", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 37.101);
-      tl.set("#cg-35", { visibility: "hidden" }, 37.221);
+      tl.set("#cg-35", { visibility: "visible" }, 33.833);
+      tl.to("#cg-35", { opacity: 1, duration: 0.100 }, 33.833);
+      tl.to("#cg-35", { opacity: 0, duration: 0.100 }, 35.286);
+      tl.set("#cg-35", { visibility: "hidden" }, 35.386);
 
       // Caption 36: "的是如何提升利潤、" (dur: 1.553s)
-      tl.set("#cg-36", { visibility: "visible" }, 37.221);
-      tl.to("#cg-36", { opacity: 1, y: 0, duration: 0.150 }, 37.221);
-      tl.to("#cg-36", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 38.654);
-      tl.set("#cg-36", { visibility: "hidden" }, 38.774);
+      tl.set("#cg-36", { visibility: "visible" }, 35.386);
+      tl.to("#cg-36", { opacity: 1, duration: 0.100 }, 35.386);
+      tl.to("#cg-36", { opacity: 0, duration: 0.100 }, 36.839);
+      tl.set("#cg-36", { visibility: "hidden" }, 36.939);
 
       // Caption 37: "如何分配有限預算，" (dur: 1.554s)
-      tl.set("#cg-37", { visibility: "visible" }, 38.774);
-      tl.to("#cg-37", { opacity: 1, y: 0, duration: 0.150 }, 38.774);
-      tl.to("#cg-37", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 40.208);
-      tl.set("#cg-37", { visibility: "hidden" }, 40.328);
+      tl.set("#cg-37", { visibility: "visible" }, 36.939);
+      tl.to("#cg-37", { opacity: 1, duration: 0.100 }, 36.939);
+      tl.to("#cg-37", { opacity: 0, duration: 0.100 }, 38.393);
+      tl.set("#cg-37", { visibility: "hidden" }, 38.493);
 
       // Caption 38: "以及哪些投資最值得投入。" (dur: 2.135s)
-      tl.set("#cg-38", { visibility: "visible" }, 40.328);
-      tl.to("#cg-38", { opacity: 1, y: 0, duration: 0.150 }, 40.328);
-      tl.to("#cg-38", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 42.343);
-      tl.set("#cg-38", { visibility: "hidden" }, 42.463);
+      tl.set("#cg-38", { visibility: "visible" }, 38.493);
+      tl.to("#cg-38", { opacity: 1, duration: 0.100 }, 38.493);
+      tl.to("#cg-38", { opacity: 0, duration: 0.100 }, 40.528);
+      tl.set("#cg-38", { visibility: "hidden" }, 40.628);
 
       // Caption 39: "我們將預測未來獲利並最佳化預算。" (dur: 2.913s)
-      tl.set("#cg-39", { visibility: "visible" }, 42.463);
-      tl.to("#cg-39", { opacity: 1, y: 0, duration: 0.150 }, 42.463);
-      tl.to("#cg-39", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 45.256);
-      tl.set("#cg-39", { visibility: "hidden" }, 45.376);
+      tl.set("#cg-39", { visibility: "visible" }, 40.628);
+      tl.to("#cg-39", { opacity: 1, duration: 0.100 }, 40.628);
+      tl.to("#cg-39", { opacity: 0, duration: 0.100 }, 43.441);
+      tl.set("#cg-39", { visibility: "hidden" }, 43.541);
 
       // Caption 40: "我們提出五個商業問題與假說：" (dur: 2.599s)
-      tl.set("#cg-40", { visibility: "visible" }, 45.376);
-      tl.to("#cg-40", { opacity: 1, y: 0, duration: 0.150 }, 45.376);
-      tl.to("#cg-40", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 47.855);
-      tl.set("#cg-40", { visibility: "hidden" }, 47.975);
+      tl.set("#cg-40", { visibility: "visible" }, 43.541);
+      tl.to("#cg-40", { opacity: 1, duration: 0.100 }, 43.541);
+      tl.to("#cg-40", { opacity: 0, duration: 0.100 }, 46.040);
+      tl.set("#cg-40", { visibility: "hidden" }, 46.140);
 
       // Caption 41: "研發支出與利潤是否呈強烈正相關？" (dur: 2.999s)
-      tl.set("#cg-41", { visibility: "visible" }, 47.975);
-      tl.to("#cg-41", { opacity: 1, y: 0, duration: 0.150 }, 47.975);
-      tl.to("#cg-41", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 50.854);
-      tl.set("#cg-41", { visibility: "hidden" }, 50.974);
+      tl.set("#cg-41", { visibility: "visible" }, 46.140);
+      tl.to("#cg-41", { opacity: 1, duration: 0.100 }, 46.140);
+      tl.to("#cg-41", { opacity: 0, duration: 0.100 }, 49.039);
+      tl.set("#cg-41", { visibility: "hidden" }, 49.139);
 
       // Caption 42: "行銷支出影響如何？" (dur: 1.599s)
-      tl.set("#cg-42", { visibility: "visible" }, 50.974);
-      tl.to("#cg-42", { opacity: 1, y: 0, duration: 0.150 }, 50.974);
-      tl.to("#cg-42", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 52.453);
-      tl.set("#cg-42", { visibility: "hidden" }, 52.573);
+      tl.set("#cg-42", { visibility: "visible" }, 49.139);
+      tl.to("#cg-42", { opacity: 1, duration: 0.100 }, 49.139);
+      tl.to("#cg-42", { opacity: 0, duration: 0.100 }, 50.638);
+      tl.set("#cg-42", { visibility: "hidden" }, 50.738);
 
       // Caption 43: "行政支出是否只是成本中心？" (dur: 2.399s)
-      tl.set("#cg-43", { visibility: "visible" }, 52.573);
-      tl.to("#cg-43", { opacity: 1, y: 0, duration: 0.150 }, 52.573);
-      tl.to("#cg-43", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 54.852);
-      tl.set("#cg-43", { visibility: "hidden" }, 54.972);
+      tl.set("#cg-43", { visibility: "visible" }, 50.738);
+      tl.to("#cg-43", { opacity: 1, duration: 0.100 }, 50.738);
+      tl.to("#cg-43", { opacity: 0, duration: 0.100 }, 53.037);
+      tl.set("#cg-43", { visibility: "hidden" }, 53.137);
 
       // Caption 44: "不同州別是否對利潤有實質影響？" (dur: 2.799s)
-      tl.set("#cg-44", { visibility: "visible" }, 54.972);
-      tl.to("#cg-44", { opacity: 1, y: 0, duration: 0.150 }, 54.972);
-      tl.to("#cg-44", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 57.651);
-      tl.set("#cg-44", { visibility: "hidden" }, 57.771);
+      tl.set("#cg-44", { visibility: "visible" }, 53.137);
+      tl.to("#cg-44", { opacity: 1, duration: 0.100 }, 53.137);
+      tl.to("#cg-44", { opacity: 0, duration: 0.100 }, 55.836);
+      tl.set("#cg-44", { visibility: "hidden" }, 55.936);
 
-      // Caption 45: "專案的商業成功標準在於找出" (dur: 2.604s)
-      tl.set("#cg-45", { visibility: "visible" }, 57.771);
-      tl.to("#cg-45", { opacity: 1, y: 0, duration: 0.150 }, 57.771);
-      tl.to("#cg-45", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 60.255);
-      tl.set("#cg-45", { visibility: "hidden" }, 60.375);
+      // Caption 45: "專案的商業成功標準在於找出" (dur: 2.571s)
+      tl.set("#cg-45", { visibility: "visible" }, 55.936);
+      tl.to("#cg-45", { opacity: 1, duration: 0.100 }, 55.936);
+      tl.to("#cg-45", { opacity: 0, duration: 0.100 }, 58.407);
+      tl.set("#cg-45", { visibility: "hidden" }, 58.507);
 
-      // Caption 46: "關鍵獲利因子並提供配置建議。" (dur: 2.603s)
-      tl.set("#cg-46", { visibility: "visible" }, 60.375);
-      tl.to("#cg-46", { opacity: 1, y: 0, duration: 0.150 }, 60.375);
-      tl.to("#cg-46", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 62.858);
-      tl.set("#cg-46", { visibility: "hidden" }, 62.978);
+      // Caption 46: "關鍵獲利因子並提供配置建議。" (dur: 2.570s)
+      tl.set("#cg-46", { visibility: "visible" }, 58.507);
+      tl.to("#cg-46", { opacity: 1, duration: 0.100 }, 58.507);
+      tl.to("#cg-46", { opacity: 0, duration: 0.100 }, 60.977);
+      tl.set("#cg-46", { visibility: "hidden" }, 61.077);
 
-      // Caption 47: "技術成功標準則是模型決定係數" (dur: 2.804s)
-      tl.set("#cg-47", { visibility: "visible" }, 62.978);
-      tl.to("#cg-47", { opacity: 1, y: 0, duration: 0.150 }, 62.978);
-      tl.to("#cg-47", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 65.662);
-      tl.set("#cg-47", { visibility: "hidden" }, 65.782);
+      // Caption 47: "技術成功標準則是模型決定係數" (dur: 2.768s)
+      tl.set("#cg-47", { visibility: "visible" }, 61.077);
+      tl.to("#cg-47", { opacity: 1, duration: 0.100 }, 61.077);
+      tl.to("#cg-47", { opacity: 0, duration: 0.100 }, 63.745);
+      tl.set("#cg-47", { visibility: "hidden" }, 63.845);
 
-      // Caption 48: "R²" (dur: 0.401s)
-      tl.set("#cg-48", { visibility: "visible" }, 65.782);
-      tl.to("#cg-48", { opacity: 1, y: 0, duration: 0.150 }, 65.782);
-      tl.to("#cg-48", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 66.063);
-      tl.set("#cg-48", { visibility: "hidden" }, 66.183);
+      // Caption 48: "R²" (dur: 0.396s)
+      tl.set("#cg-48", { visibility: "visible" }, 63.845);
+      tl.to("#cg-48", { opacity: 1, duration: 0.100 }, 63.845);
+      tl.to("#cg-48", { opacity: 0, duration: 0.100 }, 64.141);
+      tl.set("#cg-48", { visibility: "hidden" }, 64.241);
 
-      // Caption 49: "大於百分之九十、" (dur: 1.402s)
-      tl.set("#cg-49", { visibility: "visible" }, 66.183);
-      tl.to("#cg-49", { opacity: 1, y: 0, duration: 0.150 }, 66.183);
-      tl.to("#cg-49", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 67.465);
-      tl.set("#cg-49", { visibility: "hidden" }, 67.585);
+      // Caption 49: "大於百分之九十、" (dur: 1.384s)
+      tl.set("#cg-49", { visibility: "visible" }, 64.241);
+      tl.to("#cg-49", { opacity: 1, duration: 0.100 }, 64.241);
+      tl.to("#cg-49", { opacity: 0, duration: 0.100 }, 65.525);
+      tl.set("#cg-49", { visibility: "hidden" }, 65.625);
 
-      // Caption 50: "最小化均方根誤差，" (dur: 1.602s)
-      tl.set("#cg-50", { visibility: "visible" }, 67.585);
-      tl.to("#cg-50", { opacity: 1, y: 0, duration: 0.150 }, 67.585);
-      tl.to("#cg-50", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 69.067);
-      tl.set("#cg-50", { visibility: "hidden" }, 69.187);
+      // Caption 50: "最小化均方根誤差，" (dur: 1.582s)
+      tl.set("#cg-50", { visibility: "visible" }, 65.625);
+      tl.to("#cg-50", { opacity: 1, duration: 0.100 }, 65.625);
+      tl.to("#cg-50", { opacity: 0, duration: 0.100 }, 67.107);
+      tl.set("#cg-50", { visibility: "hidden" }, 67.207);
 
-      // Caption 51: "並確保模型的可解釋性。" (dur: 2.003s)
-      tl.set("#cg-51", { visibility: "visible" }, 69.187);
-      tl.to("#cg-51", { opacity: 1, y: 0, duration: 0.150 }, 69.187);
-      tl.to("#cg-51", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 71.070);
-      tl.set("#cg-51", { visibility: "hidden" }, 71.190);
+      // Caption 51: "並確保模型的可解釋性。" (dur: 1.977s)
+      tl.set("#cg-51", { visibility: "visible" }, 67.207);
+      tl.to("#cg-51", { opacity: 1, duration: 0.100 }, 67.207);
+      tl.to("#cg-51", { opacity: 0, duration: 0.100 }, 69.084);
+      tl.set("#cg-51", { visibility: "hidden" }, 69.184);
 
       // Caption 52: "第二階段是數據理解。" (dur: 1.755s)
-      tl.set("#cg-52", { visibility: "visible" }, 71.189);
-      tl.to("#cg-52", { opacity: 1, y: 0, duration: 0.150 }, 71.189);
-      tl.to("#cg-52", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 72.824);
-      tl.set("#cg-52", { visibility: "hidden" }, 72.944);
+      tl.set("#cg-52", { visibility: "visible" }, 69.184);
+      tl.to("#cg-52", { opacity: 1, duration: 0.100 }, 69.184);
+      tl.to("#cg-52", { opacity: 0, duration: 0.100 }, 70.839);
+      tl.set("#cg-52", { visibility: "hidden" }, 70.939);
 
       // Caption 53: "數據集包含" (dur: 0.976s)
-      tl.set("#cg-53", { visibility: "visible" }, 72.944);
-      tl.to("#cg-53", { opacity: 1, y: 0, duration: 0.150 }, 72.944);
-      tl.to("#cg-53", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 73.800);
-      tl.set("#cg-53", { visibility: "hidden" }, 73.920);
+      tl.set("#cg-53", { visibility: "visible" }, 70.939);
+      tl.to("#cg-53", { opacity: 1, duration: 0.100 }, 70.939);
+      tl.to("#cg-53", { opacity: 0, duration: 0.100 }, 71.815);
+      tl.set("#cg-53", { visibility: "hidden" }, 71.915);
 
       // Caption 54: "50" (dur: 0.390s)
-      tl.set("#cg-54", { visibility: "visible" }, 73.920);
-      tl.to("#cg-54", { opacity: 1, y: 0, duration: 0.150 }, 73.920);
-      tl.to("#cg-54", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 74.190);
-      tl.set("#cg-54", { visibility: "hidden" }, 74.310);
+      tl.set("#cg-54", { visibility: "visible" }, 71.915);
+      tl.to("#cg-54", { opacity: 1, duration: 0.100 }, 71.915);
+      tl.to("#cg-54", { opacity: 0, duration: 0.100 }, 72.205);
+      tl.set("#cg-54", { visibility: "hidden" }, 72.305);
 
       // Caption 55: "筆記錄，" (dur: 0.585s)
-      tl.set("#cg-55", { visibility: "visible" }, 74.310);
-      tl.to("#cg-55", { opacity: 1, y: 0, duration: 0.150 }, 74.310);
-      tl.to("#cg-55", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 74.775);
-      tl.set("#cg-55", { visibility: "hidden" }, 74.895);
+      tl.set("#cg-55", { visibility: "visible" }, 72.305);
+      tl.to("#cg-55", { opacity: 1, duration: 0.100 }, 72.305);
+      tl.to("#cg-55", { opacity: 0, duration: 0.100 }, 72.790);
+      tl.set("#cg-55", { visibility: "hidden" }, 72.890);
 
       // Caption 56: "特徵包括研發支出、" (dur: 1.560s)
-      tl.set("#cg-56", { visibility: "visible" }, 74.895);
-      tl.to("#cg-56", { opacity: 1, y: 0, duration: 0.150 }, 74.895);
-      tl.to("#cg-56", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 76.335);
-      tl.set("#cg-56", { visibility: "hidden" }, 76.455);
+      tl.set("#cg-56", { visibility: "visible" }, 72.890);
+      tl.to("#cg-56", { opacity: 1, duration: 0.100 }, 72.890);
+      tl.to("#cg-56", { opacity: 0, duration: 0.100 }, 74.350);
+      tl.set("#cg-56", { visibility: "hidden" }, 74.450);
 
       // Caption 57: "行政支出、" (dur: 0.780s)
-      tl.set("#cg-57", { visibility: "visible" }, 76.455);
-      tl.to("#cg-57", { opacity: 1, y: 0, duration: 0.150 }, 76.455);
-      tl.to("#cg-57", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 77.115);
-      tl.set("#cg-57", { visibility: "hidden" }, 77.235);
+      tl.set("#cg-57", { visibility: "visible" }, 74.450);
+      tl.to("#cg-57", { opacity: 1, duration: 0.100 }, 74.450);
+      tl.to("#cg-57", { opacity: 0, duration: 0.100 }, 75.130);
+      tl.set("#cg-57", { visibility: "hidden" }, 75.230);
 
       // Caption 58: "行銷支出、" (dur: 0.781s)
-      tl.set("#cg-58", { visibility: "visible" }, 77.235);
-      tl.to("#cg-58", { opacity: 1, y: 0, duration: 0.150 }, 77.235);
-      tl.to("#cg-58", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 77.896);
-      tl.set("#cg-58", { visibility: "hidden" }, 78.016);
+      tl.set("#cg-58", { visibility: "visible" }, 75.230);
+      tl.to("#cg-58", { opacity: 1, duration: 0.100 }, 75.230);
+      tl.to("#cg-58", { opacity: 0, duration: 0.100 }, 75.911);
+      tl.set("#cg-58", { visibility: "hidden" }, 76.011);
 
       // Caption 59: "州別以及目標變數利潤。" (dur: 1.950s)
-      tl.set("#cg-59", { visibility: "visible" }, 78.016);
-      tl.to("#cg-59", { opacity: 1, y: 0, duration: 0.150 }, 78.016);
-      tl.to("#cg-59", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 79.846);
-      tl.set("#cg-59", { visibility: "hidden" }, 79.966);
+      tl.set("#cg-59", { visibility: "visible" }, 76.011);
+      tl.to("#cg-59", { opacity: 1, duration: 0.100 }, 76.011);
+      tl.to("#cg-59", { opacity: 0, duration: 0.100 }, 77.861);
+      tl.set("#cg-59", { visibility: "hidden" }, 77.961);
 
       // Caption 60: "我們首先進行數據加" (dur: 1.756s)
-      tl.set("#cg-60", { visibility: "visible" }, 79.966);
-      tl.to("#cg-60", { opacity: 1, y: 0, duration: 0.150 }, 79.966);
-      tl.to("#cg-60", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 81.602);
-      tl.set("#cg-60", { visibility: "hidden" }, 81.722);
+      tl.set("#cg-60", { visibility: "visible" }, 77.961);
+      tl.to("#cg-60", { opacity: 1, duration: 0.100 }, 77.961);
+      tl.to("#cg-60", { opacity: 0, duration: 0.100 }, 79.617);
+      tl.set("#cg-60", { visibility: "hidden" }, 79.717);
 
       // Caption 61: "載與基本統計量檢查。" (dur: 1.755s)
-      tl.set("#cg-61", { visibility: "visible" }, 81.722);
-      tl.to("#cg-61", { opacity: 1, y: 0, duration: 0.150 }, 81.722);
-      tl.to("#cg-61", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 83.357);
-      tl.set("#cg-61", { visibility: "hidden" }, 83.477);
+      tl.set("#cg-61", { visibility: "visible" }, 79.717);
+      tl.to("#cg-61", { opacity: 1, duration: 0.100 }, 79.717);
+      tl.to("#cg-61", { opacity: 0, duration: 0.100 }, 81.372);
+      tl.set("#cg-61", { visibility: "hidden" }, 81.472);
 
       // Caption 62: "接著進行數據質量檢查，" (dur: 1.904s)
-      tl.set("#cg-62", { visibility: "visible" }, 83.477);
-      tl.to("#cg-62", { opacity: 1, y: 0, duration: 0.150 }, 83.477);
-      tl.to("#cg-62", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 85.261);
-      tl.set("#cg-62", { visibility: "hidden" }, 85.381);
+      tl.set("#cg-62", { visibility: "visible" }, 81.472);
+      tl.to("#cg-62", { opacity: 1, duration: 0.100 }, 81.472);
+      tl.to("#cg-62", { opacity: 0, duration: 0.100 }, 83.276);
+      tl.set("#cg-62", { visibility: "hidden" }, 83.376);
 
       // Caption 63: "確認無缺失值與重複記錄。" (dur: 2.095s)
-      tl.set("#cg-63", { visibility: "visible" }, 85.381);
-      tl.to("#cg-63", { opacity: 1, y: 0, duration: 0.150 }, 85.381);
-      tl.to("#cg-63", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 87.356);
-      tl.set("#cg-63", { visibility: "hidden" }, 87.476);
+      tl.set("#cg-63", { visibility: "visible" }, 83.376);
+      tl.to("#cg-63", { opacity: 1, duration: 0.100 }, 83.376);
+      tl.to("#cg-63", { opacity: 0, duration: 0.100 }, 85.371);
+      tl.set("#cg-63", { visibility: "hidden" }, 85.471);
 
       // Caption 64: "單變數分析顯示，" (dur: 1.332s)
-      tl.set("#cg-64", { visibility: "visible" }, 87.476);
-      tl.to("#cg-64", { opacity: 1, y: 0, duration: 0.150 }, 87.476);
-      tl.to("#cg-64", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 88.688);
-      tl.set("#cg-64", { visibility: "hidden" }, 88.808);
+      tl.set("#cg-64", { visibility: "visible" }, 85.471);
+      tl.to("#cg-64", { opacity: 1, duration: 0.100 }, 85.471);
+      tl.to("#cg-64", { opacity: 0, duration: 0.100 }, 86.703);
+      tl.set("#cg-64", { visibility: "hidden" }, 86.803);
 
       // Caption 65: "利潤大致呈常態分佈，" (dur: 1.714s)
-      tl.set("#cg-65", { visibility: "visible" }, 88.808);
-      tl.to("#cg-65", { opacity: 1, y: 0, duration: 0.150 }, 88.808);
-      tl.to("#cg-65", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 90.402);
-      tl.set("#cg-65", { visibility: "hidden" }, 90.522);
+      tl.set("#cg-65", { visibility: "visible" }, 86.803);
+      tl.to("#cg-65", { opacity: 1, duration: 0.100 }, 86.803);
+      tl.to("#cg-65", { opacity: 0, duration: 0.100 }, 88.417);
+      tl.set("#cg-65", { visibility: "hidden" }, 88.517);
 
       // Caption 66: "且無明顯的異常離群值。" (dur: 1.904s)
-      tl.set("#cg-66", { visibility: "visible" }, 90.522);
-      tl.to("#cg-66", { opacity: 1, y: 0, duration: 0.150 }, 90.522);
-      tl.to("#cg-66", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 92.306);
-      tl.set("#cg-66", { visibility: "hidden" }, 92.426);
+      tl.set("#cg-66", { visibility: "visible" }, 88.517);
+      tl.to("#cg-66", { opacity: 1, duration: 0.100 }, 88.517);
+      tl.to("#cg-66", { opacity: 0, duration: 0.100 }, 90.321);
+      tl.set("#cg-66", { visibility: "hidden" }, 90.421);
 
       // Caption 67: "我們也分析了研發、" (dur: 1.523s)
-      tl.set("#cg-67", { visibility: "visible" }, 92.426);
-      tl.to("#cg-67", { opacity: 1, y: 0, duration: 0.150 }, 92.426);
-      tl.to("#cg-67", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 93.829);
-      tl.set("#cg-67", { visibility: "hidden" }, 93.949);
+      tl.set("#cg-67", { visibility: "visible" }, 90.421);
+      tl.to("#cg-67", { opacity: 1, duration: 0.100 }, 90.421);
+      tl.to("#cg-67", { opacity: 0, duration: 0.100 }, 91.844);
+      tl.set("#cg-67", { visibility: "hidden" }, 91.944);
 
       // Caption 68: "行銷和行政支出的分佈特徵。" (dur: 2.285s)
-      tl.set("#cg-68", { visibility: "visible" }, 93.949);
-      tl.to("#cg-68", { opacity: 1, y: 0, duration: 0.150 }, 93.949);
-      tl.to("#cg-68", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 96.114);
-      tl.set("#cg-68", { visibility: "hidden" }, 96.234);
+      tl.set("#cg-68", { visibility: "visible" }, 91.944);
+      tl.to("#cg-68", { opacity: 1, duration: 0.100 }, 91.944);
+      tl.to("#cg-68", { opacity: 0, duration: 0.100 }, 94.129);
+      tl.set("#cg-68", { visibility: "hidden" }, 94.229);
 
       // Caption 69: "雙變數分析中，" (dur: 1.193s)
-      tl.set("#cg-69", { visibility: "visible" }, 96.235);
-      tl.to("#cg-69", { opacity: 1, y: 0, duration: 0.150 }, 96.235);
-      tl.to("#cg-69", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 97.308);
-      tl.set("#cg-69", { visibility: "hidden" }, 97.428);
+      tl.set("#cg-69", { visibility: "visible" }, 94.229);
+      tl.to("#cg-69", { opacity: 1, duration: 0.100 }, 94.229);
+      tl.to("#cg-69", { opacity: 0, duration: 0.100 }, 95.322);
+      tl.set("#cg-69", { visibility: "hidden" }, 95.422);
 
       // Caption 70: "我們繪製散佈圖與相關係數矩陣。" (dur: 2.785s)
-      tl.set("#cg-70", { visibility: "visible" }, 97.428);
-      tl.to("#cg-70", { opacity: 1, y: 0, duration: 0.150 }, 97.428);
-      tl.to("#cg-70", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 100.093);
-      tl.set("#cg-70", { visibility: "hidden" }, 100.213);
+      tl.set("#cg-70", { visibility: "visible" }, 95.422);
+      tl.to("#cg-70", { opacity: 1, duration: 0.100 }, 95.422);
+      tl.to("#cg-70", { opacity: 0, duration: 0.100 }, 98.107);
+      tl.set("#cg-70", { visibility: "hidden" }, 98.207);
 
       // Caption 71: "可以發現，" (dur: 0.795s)
-      tl.set("#cg-71", { visibility: "visible" }, 100.213);
-      tl.to("#cg-71", { opacity: 1, y: 0, duration: 0.150 }, 100.213);
-      tl.to("#cg-71", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 100.888);
-      tl.set("#cg-71", { visibility: "hidden" }, 101.008);
+      tl.set("#cg-71", { visibility: "visible" }, 98.207);
+      tl.to("#cg-71", { opacity: 1, duration: 0.100 }, 98.207);
+      tl.to("#cg-71", { opacity: 0, duration: 0.100 }, 98.902);
+      tl.set("#cg-71", { visibility: "hidden" }, 99.002);
 
       // Caption 72: "研發支出與利潤呈現極高的正相關，" (dur: 2.984s)
-      tl.set("#cg-72", { visibility: "visible" }, 101.008);
-      tl.to("#cg-72", { opacity: 1, y: 0, duration: 0.150 }, 101.008);
-      tl.to("#cg-72", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 103.872);
-      tl.set("#cg-72", { visibility: "hidden" }, 103.992);
+      tl.set("#cg-72", { visibility: "visible" }, 99.002);
+      tl.to("#cg-72", { opacity: 1, duration: 0.100 }, 99.002);
+      tl.to("#cg-72", { opacity: 0, duration: 0.100 }, 101.886);
+      tl.set("#cg-72", { visibility: "hidden" }, 101.986);
 
       // Caption 73: "行銷支出呈中度正相關，" (dur: 1.989s)
-      tl.set("#cg-73", { visibility: "visible" }, 103.992);
-      tl.to("#cg-73", { opacity: 1, y: 0, duration: 0.150 }, 103.992);
-      tl.to("#cg-73", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 105.861);
-      tl.set("#cg-73", { visibility: "hidden" }, 105.981);
+      tl.set("#cg-73", { visibility: "visible" }, 101.986);
+      tl.to("#cg-73", { opacity: 1, duration: 0.100 }, 101.986);
+      tl.to("#cg-73", { opacity: 0, duration: 0.100 }, 103.875);
+      tl.set("#cg-73", { visibility: "hidden" }, 103.975);
 
       // Caption 74: "而行政支出與利潤" (dur: 1.591s)
-      tl.set("#cg-74", { visibility: "visible" }, 105.981);
-      tl.to("#cg-74", { opacity: 1, y: 0, duration: 0.150 }, 105.981);
-      tl.to("#cg-74", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 107.452);
-      tl.set("#cg-74", { visibility: "hidden" }, 107.572);
+      tl.set("#cg-74", { visibility: "visible" }, 103.975);
+      tl.to("#cg-74", { opacity: 1, duration: 0.100 }, 103.975);
+      tl.to("#cg-74", { opacity: 0, duration: 0.100 }, 105.466);
+      tl.set("#cg-74", { visibility: "hidden" }, 105.566);
 
       // Caption 75: "的相關性則非常低。" (dur: 1.591s)
-      tl.set("#cg-75", { visibility: "visible" }, 107.572);
-      tl.to("#cg-75", { opacity: 1, y: 0, duration: 0.150 }, 107.572);
-      tl.to("#cg-75", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 109.043);
-      tl.set("#cg-75", { visibility: "hidden" }, 109.163);
+      tl.set("#cg-75", { visibility: "visible" }, 105.566);
+      tl.to("#cg-75", { opacity: 1, duration: 0.100 }, 105.566);
+      tl.to("#cg-75", { opacity: 0, duration: 0.100 }, 107.057);
+      tl.set("#cg-75", { visibility: "hidden" }, 107.157);
 
       // Caption 76: "對州別進行箱形圖分析" (dur: 1.988s)
-      tl.set("#cg-76", { visibility: "visible" }, 109.163);
-      tl.to("#cg-76", { opacity: 1, y: 0, duration: 0.150 }, 109.163);
-      tl.to("#cg-76", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 111.031);
-      tl.set("#cg-76", { visibility: "hidden" }, 111.151);
+      tl.set("#cg-76", { visibility: "visible" }, 107.157);
+      tl.to("#cg-76", { opacity: 1, duration: 0.100 }, 107.157);
+      tl.to("#cg-76", { opacity: 0, duration: 0.100 }, 109.045);
+      tl.set("#cg-76", { visibility: "hidden" }, 109.145);
 
       // Caption 77: "與單因子變異數分析，" (dur: 1.789s)
-      tl.set("#cg-77", { visibility: "visible" }, 111.151);
-      tl.to("#cg-77", { opacity: 1, y: 0, duration: 0.150 }, 111.151);
-      tl.to("#cg-77", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 112.820);
-      tl.set("#cg-77", { visibility: "hidden" }, 112.940);
+      tl.set("#cg-77", { visibility: "visible" }, 109.145);
+      tl.to("#cg-77", { opacity: 1, duration: 0.100 }, 109.145);
+      tl.to("#cg-77", { opacity: 0, duration: 0.100 }, 110.834);
+      tl.set("#cg-77", { visibility: "hidden" }, 110.934);
 
       // Caption 78: "結果顯示不同州別之間的利" (dur: 2.385s)
-      tl.set("#cg-78", { visibility: "visible" }, 112.940);
-      tl.to("#cg-78", { opacity: 1, y: 0, duration: 0.150 }, 112.940);
-      tl.to("#cg-78", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 115.205);
-      tl.set("#cg-78", { visibility: "hidden" }, 115.325);
+      tl.set("#cg-78", { visibility: "visible" }, 110.934);
+      tl.to("#cg-78", { opacity: 1, duration: 0.100 }, 110.934);
+      tl.to("#cg-78", { opacity: 0, duration: 0.100 }, 113.219);
+      tl.set("#cg-78", { visibility: "hidden" }, 113.319);
 
       // Caption 79: "潤差異在統計上並不顯著。" (dur: 2.187s)
-      tl.set("#cg-79", { visibility: "visible" }, 115.325);
-      tl.to("#cg-79", { opacity: 1, y: 0, duration: 0.150 }, 115.325);
-      tl.to("#cg-79", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 117.392);
-      tl.set("#cg-79", { visibility: "hidden" }, 117.512);
+      tl.set("#cg-79", { visibility: "visible" }, 113.319);
+      tl.to("#cg-79", { opacity: 1, duration: 0.100 }, 113.319);
+      tl.to("#cg-79", { opacity: 0, duration: 0.100 }, 115.406);
+      tl.set("#cg-79", { visibility: "hidden" }, 115.506);
 
       // Caption 80: "異常值分析也確認數據集中" (dur: 2.386s)
-      tl.set("#cg-80", { visibility: "visible" }, 117.512);
-      tl.to("#cg-80", { opacity: 1, y: 0, duration: 0.150 }, 117.512);
-      tl.to("#cg-80", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 119.778);
-      tl.set("#cg-80", { visibility: "hidden" }, 119.898);
+      tl.set("#cg-80", { visibility: "visible" }, 115.506);
+      tl.to("#cg-80", { opacity: 1, duration: 0.100 }, 115.506);
+      tl.to("#cg-80", { opacity: 0, duration: 0.100 }, 117.792);
+      tl.set("#cg-80", { visibility: "hidden" }, 117.892);
 
       // Caption 81: "僅有一筆極低獲利的離群值。" (dur: 2.385s)
-      tl.set("#cg-81", { visibility: "visible" }, 119.898);
-      tl.to("#cg-81", { opacity: 1, y: 0, duration: 0.150 }, 119.898);
-      tl.to("#cg-81", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 122.163);
-      tl.set("#cg-81", { visibility: "hidden" }, 122.283);
-
-      // Caption 82: "第三階段是數據準備。" (dur: 1.707s)
-      tl.set("#cg-82", { visibility: "visible" }, 122.283);
-      tl.to("#cg-82", { opacity: 1, y: 0, duration: 0.150 }, 122.283);
-      tl.to("#cg-82", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 123.870);
-      tl.set("#cg-82", { visibility: "hidden" }, 123.990);
-
-      // Caption 83: "我們進行特徵工程，" (dur: 1.518s)
-      tl.set("#cg-83", { visibility: "visible" }, 123.990);
-      tl.to("#cg-83", { opacity: 1, y: 0, duration: 0.150 }, 123.990);
-      tl.to("#cg-83", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 125.388);
-      tl.set("#cg-83", { visibility: "hidden" }, 125.508);
-
-      // Caption 84: "新增了總支出、" (dur: 1.138s)
-      tl.set("#cg-84", { visibility: "visible" }, 125.508);
-      tl.to("#cg-84", { opacity: 1, y: 0, duration: 0.150 }, 125.508);
-      tl.to("#cg-84", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 126.526);
-      tl.set("#cg-84", { visibility: "hidden" }, 126.646);
-
-      // Caption 85: "投資報酬率" (dur: 0.949s)
-      tl.set("#cg-85", { visibility: "visible" }, 126.646);
-      tl.to("#cg-85", { opacity: 1, y: 0, duration: 0.150 }, 126.646);
-      tl.to("#cg-85", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 127.475);
-      tl.set("#cg-85", { visibility: "hidden" }, 127.595);
-
-      // Caption 86: "ROI、" (dur: 0.569s)
-      tl.set("#cg-86", { visibility: "visible" }, 127.595);
-      tl.to("#cg-86", { opacity: 1, y: 0, duration: 0.150 }, 127.595);
-      tl.to("#cg-86", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 128.044);
-      tl.set("#cg-86", { visibility: "hidden" }, 128.164);
-
-      // Caption 87: "行銷支出比例與研發" (dur: 1.707s)
-      tl.set("#cg-87", { visibility: "visible" }, 128.164);
-      tl.to("#cg-87", { opacity: 1, y: 0, duration: 0.150 }, 128.164);
-      tl.to("#cg-87", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 129.751);
-      tl.set("#cg-87", { visibility: "hidden" }, 129.871);
-
-      // Caption 88: "支出比例等衍生特徵，" (dur: 1.707s)
-      tl.set("#cg-88", { visibility: "visible" }, 129.871);
-      tl.to("#cg-88", { opacity: 1, y: 0, duration: 0.150 }, 129.871);
-      tl.to("#cg-88", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 131.458);
-      tl.set("#cg-88", { visibility: "hidden" }, 131.578);
-
-      // Caption 89: "以幫助模型捕捉更" (dur: 1.518s)
-      tl.set("#cg-89", { visibility: "visible" }, 131.578);
-      tl.to("#cg-89", { opacity: 1, y: 0, duration: 0.150 }, 131.578);
-      tl.to("#cg-89", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 132.976);
-      tl.set("#cg-89", { visibility: "hidden" }, 133.096);
-
-      // Caption 90: "多商業維度的資訊。" (dur: 1.518s)
-      tl.set("#cg-90", { visibility: "visible" }, 133.096);
-      tl.to("#cg-90", { opacity: 1, y: 0, duration: 0.150 }, 133.096);
-      tl.to("#cg-90", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 134.494);
-      tl.set("#cg-90", { visibility: "hidden" }, 134.614);
-
-      // Caption 91: "我們將類別變數州別進行獨熱編碼，" (dur: 2.436s)
-      tl.set("#cg-91", { visibility: "visible" }, 134.613);
-      tl.to("#cg-91", { opacity: 1, y: 0, duration: 0.150 }, 134.613);
-      tl.to("#cg-91", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 136.929);
-      tl.set("#cg-91", { visibility: "hidden" }, 137.049);
-
-      // Caption 92: "並以八比二的比例切" (dur: 1.462s)
-      tl.set("#cg-92", { visibility: "visible" }, 137.049);
-      tl.to("#cg-92", { opacity: 1, y: 0, duration: 0.150 }, 137.049);
-      tl.to("#cg-92", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 138.391);
-      tl.set("#cg-92", { visibility: "hidden" }, 138.511);
-
-      // Caption 93: "分訓練集與測試集。" (dur: 1.299s)
-      tl.set("#cg-93", { visibility: "visible" }, 138.511);
-      tl.to("#cg-93", { opacity: 1, y: 0, duration: 0.150 }, 138.511);
-      tl.to("#cg-93", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 139.690);
-      tl.set("#cg-93", { visibility: "hidden" }, 139.810);
-
-      // Caption 94: "對於套用正規化的模型，" (dur: 1.624s)
-      tl.set("#cg-94", { visibility: "visible" }, 139.810);
-      tl.to("#cg-94", { opacity: 1, y: 0, duration: 0.150 }, 139.810);
-      tl.to("#cg-94", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 141.314);
-      tl.set("#cg-94", { visibility: "hidden" }, 141.434);
-
-      // Caption 95: "如" (dur: 0.162s)
-      tl.set("#cg-95", { visibility: "visible" }, 141.434);
-      tl.to("#cg-95", { opacity: 1, y: 0, duration: 0.065 }, 141.434);
-      tl.to("#cg-95", { opacity: 0, y: -5, duration: 0.065, ease: "power2.in" }, 141.531);
-      tl.set("#cg-95", { visibility: "hidden" }, 141.596);
-
-      // Caption 96: "Lasso" (dur: 0.812s)
-      tl.set("#cg-96", { visibility: "visible" }, 141.596);
-      tl.to("#cg-96", { opacity: 1, y: 0, duration: 0.150 }, 141.596);
-      tl.to("#cg-96", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 142.288);
-      tl.set("#cg-96", { visibility: "hidden" }, 142.408);
-
-      // Caption 97: "和" (dur: 0.163s)
-      tl.set("#cg-97", { visibility: "visible" }, 142.408);
-      tl.to("#cg-97", { opacity: 1, y: 0, duration: 0.065 }, 142.408);
-      tl.to("#cg-97", { opacity: 0, y: -5, duration: 0.065, ease: "power2.in" }, 142.506);
-      tl.set("#cg-97", { visibility: "hidden" }, 142.571);
-
-      // Caption 98: "Ridge，" (dur: 0.812s)
-      tl.set("#cg-98", { visibility: "visible" }, 142.571);
-      tl.to("#cg-98", { opacity: 1, y: 0, duration: 0.150 }, 142.571);
-      tl.to("#cg-98", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 143.263);
-      tl.set("#cg-98", { visibility: "hidden" }, 143.383);
-
-      // Caption 99: "我們也使用了" (dur: 0.974s)
-      tl.set("#cg-99", { visibility: "visible" }, 143.383);
-      tl.to("#cg-99", { opacity: 1, y: 0, duration: 0.150 }, 143.383);
-      tl.to("#cg-99", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 144.237);
-      tl.set("#cg-99", { visibility: "hidden" }, 144.357);
-
-      // Caption 100: "StandardScaler" (dur: 2.274s)
-      tl.set("#cg-100", { visibility: "visible" }, 144.357);
-      tl.to("#cg-100", { opacity: 1, y: 0, duration: 0.150 }, 144.357);
-      tl.to("#cg-100", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 146.511);
-      tl.set("#cg-100", { visibility: "hidden" }, 146.631);
-
-      // Caption 101: "進行特徵縮放。" (dur: 0.974s)
-      tl.set("#cg-101", { visibility: "visible" }, 146.631);
-      tl.to("#cg-101", { opacity: 1, y: 0, duration: 0.150 }, 146.631);
-      tl.to("#cg-101", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 147.485);
-      tl.set("#cg-101", { visibility: "hidden" }, 147.605);
-
-      // Caption 102: "在第四階段，" (dur: 0.952s)
-      tl.set("#cg-102", { visibility: "visible" }, 147.605);
-      tl.to("#cg-102", { opacity: 1, y: 0, duration: 0.150 }, 147.605);
-      tl.to("#cg-102", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 148.437);
-      tl.set("#cg-102", { visibility: "hidden" }, 148.557);
-
-      // Caption 103: "我們進行共線性分析。" (dur: 1.714s)
-      tl.set("#cg-103", { visibility: "visible" }, 148.557);
-      tl.to("#cg-103", { opacity: 1, y: 0, duration: 0.150 }, 148.557);
-      tl.to("#cg-103", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 150.151);
-      tl.set("#cg-103", { visibility: "hidden" }, 150.271);
-
-      // Caption 104: "計算變異數膨脹因子" (dur: 1.714s)
-      tl.set("#cg-104", { visibility: "visible" }, 150.271);
-      tl.to("#cg-104", { opacity: 1, y: 0, duration: 0.150 }, 150.271);
-      tl.to("#cg-104", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 151.865);
-      tl.set("#cg-104", { visibility: "hidden" }, 151.985);
-
-      // Caption 105: "VIF，" (dur: 0.571s)
-      tl.set("#cg-105", { visibility: "visible" }, 151.985);
-      tl.to("#cg-105", { opacity: 1, y: 0, duration: 0.150 }, 151.985);
-      tl.to("#cg-105", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 152.436);
-      tl.set("#cg-105", { visibility: "hidden" }, 152.556);
-
-      // Caption 106: "確認研發支出與行銷支出等主要特" (dur: 2.857s)
-      tl.set("#cg-106", { visibility: "visible" }, 152.556);
-      tl.to("#cg-106", { opacity: 1, y: 0, duration: 0.150 }, 152.556);
-      tl.to("#cg-106", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 155.293);
-      tl.set("#cg-106", { visibility: "hidden" }, 155.413);
-
-      // Caption 107: "徵之間是否存在嚴重的共線性問題，" (dur: 2.856s)
-      tl.set("#cg-107", { visibility: "visible" }, 155.413);
-      tl.to("#cg-107", { opacity: 1, y: 0, duration: 0.150 }, 155.413);
-      tl.to("#cg-107", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 158.149);
-      tl.set("#cg-107", { visibility: "hidden" }, 158.269);
-
-      // Caption 108: "以評估特徵與係數的穩定性。" (dur: 2.285s)
-      tl.set("#cg-108", { visibility: "visible" }, 158.269);
-      tl.to("#cg-108", { opacity: 1, y: 0, duration: 0.150 }, 158.269);
-      tl.to("#cg-108", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 160.434);
-      tl.set("#cg-108", { visibility: "hidden" }, 160.554);
-
-      // Caption 109: "第五階段是特徵選擇。" (dur: 1.782s)
-      tl.set("#cg-109", { visibility: "visible" }, 160.555);
-      tl.to("#cg-109", { opacity: 1, y: 0, duration: 0.150 }, 160.555);
-      tl.to("#cg-109", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 162.217);
-      tl.set("#cg-109", { visibility: "hidden" }, 162.337);
-
-      // Caption 110: "我們使用" (dur: 0.793s)
-      tl.set("#cg-110", { visibility: "visible" }, 162.337);
-      tl.to("#cg-110", { opacity: 1, y: 0, duration: 0.150 }, 162.337);
-      tl.to("#cg-110", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 163.010);
-      tl.set("#cg-110", { visibility: "hidden" }, 163.130);
-
-      // Caption 111: "Lasso" (dur: 0.990s)
-      tl.set("#cg-111", { visibility: "visible" }, 163.130);
-      tl.to("#cg-111", { opacity: 1, y: 0, duration: 0.150 }, 163.130);
-      tl.to("#cg-111", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 164.000);
-      tl.set("#cg-111", { visibility: "hidden" }, 164.120);
-
-      // Caption 112: "迴歸交叉驗證與遞迴特徵消除" (dur: 2.575s)
-      tl.set("#cg-112", { visibility: "visible" }, 164.120);
-      tl.to("#cg-112", { opacity: 1, y: 0, duration: 0.150 }, 164.120);
-      tl.to("#cg-112", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 166.575);
-      tl.set("#cg-112", { visibility: "hidden" }, 166.695);
-
-      // Caption 113: "RFE" (dur: 0.594s)
-      tl.set("#cg-113", { visibility: "visible" }, 166.695);
-      tl.to("#cg-113", { opacity: 1, y: 0, duration: 0.150 }, 166.695);
-      tl.to("#cg-113", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 167.169);
-      tl.set("#cg-113", { visibility: "hidden" }, 167.289);
-
-      // Caption 114: "方法，" (dur: 0.396s)
-      tl.set("#cg-114", { visibility: "visible" }, 167.289);
-      tl.to("#cg-114", { opacity: 1, y: 0, duration: 0.150 }, 167.289);
-      tl.to("#cg-114", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 167.565);
-      tl.set("#cg-114", { visibility: "hidden" }, 167.685);
-
-      // Caption 115: "自動選擇最重要的特徵組合，" (dur: 2.376s)
-      tl.set("#cg-115", { visibility: "visible" }, 167.685);
-      tl.to("#cg-115", { opacity: 1, y: 0, duration: 0.150 }, 167.685);
-      tl.to("#cg-115", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 169.941);
-      tl.set("#cg-115", { visibility: "hidden" }, 170.061);
-
-      // Caption 116: "並對原始特徵" (dur: 1.189s)
-      tl.set("#cg-116", { visibility: "visible" }, 170.061);
-      tl.to("#cg-116", { opacity: 1, y: 0, duration: 0.150 }, 170.061);
-      tl.to("#cg-116", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 171.130);
-      tl.set("#cg-116", { visibility: "hidden" }, 171.250);
-
-      // Caption 117: "and" (dur: 0.594s)
-      tl.set("#cg-117", { visibility: "visible" }, 171.250);
-      tl.to("#cg-117", { opacity: 1, y: 0, duration: 0.150 }, 171.250);
-      tl.to("#cg-117", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 171.724);
-      tl.set("#cg-117", { visibility: "hidden" }, 171.844);
-
-      // Caption 118: "衍生特徵進行比較排名。" (dur: 1.980s)
-      tl.set("#cg-118", { visibility: "visible" }, 171.844);
-      tl.to("#cg-118", { opacity: 1, y: 0, duration: 0.150 }, 171.844);
-      tl.to("#cg-118", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 173.704);
-      tl.set("#cg-118", { visibility: "hidden" }, 173.824);
-
-      // Caption 119: "第六階段是建模。" (dur: 1.155s)
-      tl.set("#cg-119", { visibility: "visible" }, 173.824);
-      tl.to("#cg-119", { opacity: 1, y: 0, duration: 0.150 }, 173.824);
-      tl.to("#cg-119", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 174.859);
-      tl.set("#cg-119", { visibility: "hidden" }, 174.979);
-
-      // Caption 120: "我們建立了線性迴歸作為基準模型，" (dur: 2.476s)
-      tl.set("#cg-120", { visibility: "visible" }, 174.979);
-      tl.to("#cg-120", { opacity: 1, y: 0, duration: 0.150 }, 174.979);
-      tl.to("#cg-120", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 177.335);
-      tl.set("#cg-120", { visibility: "hidden" }, 177.455);
-
-      // Caption 121: "並訓練了" (dur: 0.660s)
-      tl.set("#cg-121", { visibility: "visible" }, 177.455);
-      tl.to("#cg-121", { opacity: 1, y: 0, duration: 0.150 }, 177.455);
-      tl.to("#cg-121", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 177.995);
-      tl.set("#cg-121", { visibility: "hidden" }, 178.115);
-
-      // Caption 122: "Ridge、" (dur: 0.826s)
-      tl.set("#cg-122", { visibility: "visible" }, 178.115);
-      tl.to("#cg-122", { opacity: 1, y: 0, duration: 0.150 }, 178.115);
-      tl.to("#cg-122", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 178.821);
-      tl.set("#cg-122", { visibility: "hidden" }, 178.941);
-
-      // Caption 123: "Lasso、" (dur: 0.825s)
-      tl.set("#cg-123", { visibility: "visible" }, 178.941);
-      tl.to("#cg-123", { opacity: 1, y: 0, duration: 0.150 }, 178.941);
-      tl.to("#cg-123", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 179.646);
-      tl.set("#cg-123", { visibility: "hidden" }, 179.766);
-
-      // Caption 124: "隨機森林" (dur: 0.660s)
-      tl.set("#cg-124", { visibility: "visible" }, 179.766);
-      tl.to("#cg-124", { opacity: 1, y: 0, duration: 0.150 }, 179.766);
-      tl.to("#cg-124", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 180.306);
-      tl.set("#cg-124", { visibility: "hidden" }, 180.426);
-
-      // Caption 125: "and" (dur: 0.495s)
-      tl.set("#cg-125", { visibility: "visible" }, 180.426);
-      tl.to("#cg-125", { opacity: 1, y: 0, duration: 0.150 }, 180.426);
-      tl.to("#cg-125", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 180.801);
-      tl.set("#cg-125", { visibility: "hidden" }, 180.921);
-
-      // Caption 126: "梯度提升迴歸等候選模型，" (dur: 1.816s)
-      tl.set("#cg-126", { visibility: "visible" }, 180.921);
-      tl.to("#cg-126", { opacity: 1, y: 0, duration: 0.150 }, 180.921);
-      tl.to("#cg-126", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 182.617);
-      tl.set("#cg-126", { visibility: "hidden" }, 182.737);
-
-      // Caption 127: "同時也考慮了" (dur: 0.990s)
-      tl.set("#cg-127", { visibility: "visible" }, 182.737);
-      tl.to("#cg-127", { opacity: 1, y: 0, duration: 0.150 }, 182.737);
-      tl.to("#cg-127", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 183.607);
-      tl.set("#cg-127", { visibility: "hidden" }, 183.727);
-
-      // Caption 128: "XGBoost" (dur: 1.156s)
-      tl.set("#cg-128", { visibility: "visible" }, 183.727);
-      tl.to("#cg-128", { opacity: 1, y: 0, duration: 0.150 }, 183.727);
-      tl.to("#cg-128", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 184.763);
-      tl.set("#cg-128", { visibility: "hidden" }, 184.883);
-
-      // Caption 129: "與" (dur: 0.165s)
-      tl.set("#cg-129", { visibility: "visible" }, 184.883);
-      tl.to("#cg-129", { opacity: 1, y: 0, duration: 0.066 }, 184.883);
-      tl.to("#cg-129", { opacity: 0, y: -5, duration: 0.066, ease: "power2.in" }, 184.982);
-      tl.set("#cg-129", { visibility: "hidden" }, 185.048);
-
-      // Caption 130: "LightGBM。" (dur: 1.320s)
-      tl.set("#cg-130", { visibility: "visible" }, 185.048);
-      tl.to("#cg-130", { opacity: 1, y: 0, duration: 0.150 }, 185.048);
-      tl.to("#cg-130", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 186.248);
-      tl.set("#cg-130", { visibility: "hidden" }, 186.368);
-
-      // Caption 131: "第七階段是模型評估。" (dur: 1.744s)
-      tl.set("#cg-131", { visibility: "visible" }, 186.368);
-      tl.to("#cg-131", { opacity: 1, y: 0, duration: 0.150 }, 186.368);
-      tl.to("#cg-131", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 187.992);
-      tl.set("#cg-131", { visibility: "hidden" }, 188.112);
-
-      // Caption 132: "我們使用" (dur: 0.776s)
-      tl.set("#cg-132", { visibility: "visible" }, 188.112);
-      tl.to("#cg-132", { opacity: 1, y: 0, duration: 0.150 }, 188.112);
-      tl.to("#cg-132", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 188.768);
-      tl.set("#cg-132", { visibility: "hidden" }, 188.888);
-
-      // Caption 133: "R²、" (dur: 0.387s)
-      tl.set("#cg-133", { visibility: "visible" }, 188.888);
-      tl.to("#cg-133", { opacity: 1, y: 0, duration: 0.150 }, 188.888);
-      tl.to("#cg-133", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 189.155);
-      tl.set("#cg-133", { visibility: "hidden" }, 189.275);
-
-      // Caption 134: "平均絕對誤差" (dur: 1.163s)
-      tl.set("#cg-134", { visibility: "visible" }, 189.275);
-      tl.to("#cg-134", { opacity: 1, y: 0, duration: 0.150 }, 189.275);
-      tl.to("#cg-134", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 190.318);
-      tl.set("#cg-134", { visibility: "hidden" }, 190.438);
-
-      // Caption 135: "MAE" (dur: 0.582s)
-      tl.set("#cg-135", { visibility: "visible" }, 190.438);
-      tl.to("#cg-135", { opacity: 1, y: 0, duration: 0.150 }, 190.438);
-      tl.to("#cg-135", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 190.900);
-      tl.set("#cg-135", { visibility: "hidden" }, 191.020);
-
-      // Caption 136: "和" (dur: 0.194s)
-      tl.set("#cg-136", { visibility: "visible" }, 191.020);
-      tl.to("#cg-136", { opacity: 1, y: 0, duration: 0.078 }, 191.020);
-      tl.to("#cg-136", { opacity: 0, y: -5, duration: 0.078, ease: "power2.in" }, 191.136);
-      tl.set("#cg-136", { visibility: "hidden" }, 191.214);
-
-      // Caption 137: "均方根誤差" (dur: 0.969s)
-      tl.set("#cg-137", { visibility: "visible" }, 191.214);
-      tl.to("#cg-137", { opacity: 1, y: 0, duration: 0.150 }, 191.214);
-      tl.to("#cg-137", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 192.063);
-      tl.set("#cg-137", { visibility: "hidden" }, 192.183);
-
-      // Caption 138: "RMSE" (dur: 0.775s)
-      tl.set("#cg-138", { visibility: "visible" }, 192.183);
-      tl.to("#cg-138", { opacity: 1, y: 0, duration: 0.150 }, 192.183);
-      tl.to("#cg-138", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 192.838);
-      tl.set("#cg-138", { visibility: "hidden" }, 192.958);
-
-      // Caption 139: "作為評估指標，" (dur: 1.163s)
-      tl.set("#cg-139", { visibility: "visible" }, 192.958);
-      tl.to("#cg-139", { opacity: 1, y: 0, duration: 0.150 }, 192.958);
-      tl.to("#cg-139", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 194.001);
-      tl.set("#cg-139", { visibility: "hidden" }, 194.121);
-
-      // Caption 140: "並進行五折交叉驗證。" (dur: 1.745s)
-      tl.set("#cg-140", { visibility: "visible" }, 194.121);
-      tl.to("#cg-140", { opacity: 1, y: 0, duration: 0.150 }, 194.121);
-      tl.to("#cg-140", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 195.746);
-      tl.set("#cg-140", { visibility: "hidden" }, 195.866);
-
-      // Caption 141: "梯度提升迴歸在測試集上" (dur: 2.132s)
-      tl.set("#cg-141", { visibility: "visible" }, 195.866);
-      tl.to("#cg-141", { opacity: 1, y: 0, duration: 0.150 }, 195.866);
-      tl.to("#cg-141", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 197.878);
-      tl.set("#cg-141", { visibility: "hidden" }, 197.998);
-
-      // Caption 142: "取得了最優的預測表現。" (dur: 1.938s)
-      tl.set("#cg-142", { visibility: "visible" }, 197.998);
-      tl.to("#cg-142", { opacity: 1, y: 0, duration: 0.150 }, 197.998);
-      tl.to("#cg-142", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 199.816);
-      tl.set("#cg-142", { visibility: "hidden" }, 199.936);
-
-      // Caption 143: "第八階段是可解釋性" (dur: 1.683s)
-      tl.set("#cg-143", { visibility: "visible" }, 199.936);
-      tl.to("#cg-143", { opacity: 1, y: 0, duration: 0.150 }, 199.936);
-      tl.to("#cg-143", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 201.499);
-      tl.set("#cg-143", { visibility: "hidden" }, 201.619);
-
-      // Caption 144: "AI。" (dur: 0.374s)
-      tl.set("#cg-144", { visibility: "visible" }, 201.619);
-      tl.to("#cg-144", { opacity: 1, y: 0, duration: 0.150 }, 201.619);
-      tl.to("#cg-144", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 201.873);
-      tl.set("#cg-144", { visibility: "hidden" }, 201.993);
-
-      // Caption 145: "我們使用" (dur: 0.748s)
-      tl.set("#cg-145", { visibility: "visible" }, 201.993);
-      tl.to("#cg-145", { opacity: 1, y: 0, duration: 0.150 }, 201.993);
-      tl.to("#cg-145", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 202.621);
-      tl.set("#cg-145", { visibility: "hidden" }, 202.741);
-
-      // Caption 146: "SHAP" (dur: 0.748s)
-      tl.set("#cg-146", { visibility: "visible" }, 202.741);
-      tl.to("#cg-146", { opacity: 1, y: 0, duration: 0.150 }, 202.741);
-      tl.to("#cg-146", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 203.369);
-      tl.set("#cg-146", { visibility: "hidden" }, 203.489);
-
-      // Caption 147: "分析進行全局與局部解釋，" (dur: 2.056s)
-      tl.set("#cg-147", { visibility: "visible" }, 203.489);
-      tl.to("#cg-147", { opacity: 1, y: 0, duration: 0.150 }, 203.489);
-      tl.to("#cg-147", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 205.425);
-      tl.set("#cg-147", { visibility: "hidden" }, 205.545);
-
-      // Caption 148: "結果證實研發支出是主導" (dur: 2.057s)
-      tl.set("#cg-148", { visibility: "visible" }, 205.545);
-      tl.to("#cg-148", { opacity: 1, y: 0, duration: 0.150 }, 205.545);
-      tl.to("#cg-148", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 207.482);
-      tl.set("#cg-148", { visibility: "hidden" }, 207.602);
-
-      // Caption 149: "獲利預測的最關鍵因子，" (dur: 1.870s)
-      tl.set("#cg-149", { visibility: "visible" }, 207.602);
-      tl.to("#cg-149", { opacity: 1, y: 0, duration: 0.150 }, 207.602);
-      tl.to("#cg-149", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 209.352);
-      tl.set("#cg-149", { visibility: "hidden" }, 209.472);
-
-      // Caption 150: "行銷支出次之，" (dur: 1.122s)
-      tl.set("#cg-150", { visibility: "visible" }, 209.472);
-      tl.to("#cg-150", { opacity: 1, y: 0, duration: 0.150 }, 209.472);
-      tl.to("#cg-150", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 210.474);
-      tl.set("#cg-150", { visibility: "hidden" }, 210.594);
-
-      // Caption 151: "行政支出與州別影響極小。" (dur: 2.057s)
-      tl.set("#cg-151", { visibility: "visible" }, 210.594);
-      tl.to("#cg-151", { opacity: 1, y: 0, duration: 0.150 }, 210.594);
-      tl.to("#cg-151", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 212.531);
-      tl.set("#cg-151", { visibility: "hidden" }, 212.651);
+      tl.set("#cg-81", { visibility: "visible" }, 117.892);
+      tl.to("#cg-81", { opacity: 1, duration: 0.100 }, 117.892);
+      tl.to("#cg-81", { opacity: 0, duration: 0.100 }, 120.177);
+      tl.set("#cg-81", { visibility: "hidden" }, 120.277);
+
+      // Caption 82: "第三階段是數據準備。" (dur: 1.657s)
+      tl.set("#cg-82", { visibility: "visible" }, 120.277);
+      tl.to("#cg-82", { opacity: 1, duration: 0.100 }, 120.277);
+      tl.to("#cg-82", { opacity: 0, duration: 0.100 }, 121.834);
+      tl.set("#cg-82", { visibility: "hidden" }, 121.934);
+
+      // Caption 83: "我們進行特徵工程，" (dur: 1.473s)
+      tl.set("#cg-83", { visibility: "visible" }, 121.934);
+      tl.to("#cg-83", { opacity: 1, duration: 0.100 }, 121.934);
+      tl.to("#cg-83", { opacity: 0, duration: 0.100 }, 123.307);
+      tl.set("#cg-83", { visibility: "hidden" }, 123.407);
+
+      // Caption 84: "新增了總支出、" (dur: 1.105s)
+      tl.set("#cg-84", { visibility: "visible" }, 123.407);
+      tl.to("#cg-84", { opacity: 1, duration: 0.100 }, 123.407);
+      tl.to("#cg-84", { opacity: 0, duration: 0.100 }, 124.412);
+      tl.set("#cg-84", { visibility: "hidden" }, 124.512);
+
+      // Caption 85: "投資報酬率" (dur: 0.920s)
+      tl.set("#cg-85", { visibility: "visible" }, 124.512);
+      tl.to("#cg-85", { opacity: 1, duration: 0.100 }, 124.512);
+      tl.to("#cg-85", { opacity: 0, duration: 0.100 }, 125.332);
+      tl.set("#cg-85", { visibility: "hidden" }, 125.432);
+
+      // Caption 86: "ROI、" (dur: 0.553s)
+      tl.set("#cg-86", { visibility: "visible" }, 125.432);
+      tl.to("#cg-86", { opacity: 1, duration: 0.100 }, 125.432);
+      tl.to("#cg-86", { opacity: 0, duration: 0.100 }, 125.885);
+      tl.set("#cg-86", { visibility: "hidden" }, 125.985);
+
+      // Caption 87: "行銷支出比例與研發" (dur: 1.657s)
+      tl.set("#cg-87", { visibility: "visible" }, 125.985);
+      tl.to("#cg-87", { opacity: 1, duration: 0.100 }, 125.985);
+      tl.to("#cg-87", { opacity: 0, duration: 0.100 }, 127.542);
+      tl.set("#cg-87", { visibility: "hidden" }, 127.642);
+
+      // Caption 88: "支出比例等衍生特徵，" (dur: 1.657s)
+      tl.set("#cg-88", { visibility: "visible" }, 127.642);
+      tl.to("#cg-88", { opacity: 1, duration: 0.100 }, 127.642);
+      tl.to("#cg-88", { opacity: 0, duration: 0.100 }, 129.199);
+      tl.set("#cg-88", { visibility: "hidden" }, 129.299);
+
+      // Caption 89: "以幫助模型捕捉更" (dur: 1.473s)
+      tl.set("#cg-89", { visibility: "visible" }, 129.299);
+      tl.to("#cg-89", { opacity: 1, duration: 0.100 }, 129.299);
+      tl.to("#cg-89", { opacity: 0, duration: 0.100 }, 130.672);
+      tl.set("#cg-89", { visibility: "hidden" }, 130.772);
+
+      // Caption 90: "多商業維度的資訊。" (dur: 1.473s)
+      tl.set("#cg-90", { visibility: "visible" }, 130.772);
+      tl.to("#cg-90", { opacity: 1, duration: 0.100 }, 130.772);
+      tl.to("#cg-90", { opacity: 0, duration: 0.100 }, 132.145);
+      tl.set("#cg-90", { visibility: "hidden" }, 132.245);
+
+      // Caption 91: "我們將類別變數州別進行獨熱編碼，" (dur: 2.280s)
+      tl.set("#cg-91", { visibility: "visible" }, 132.245);
+      tl.to("#cg-91", { opacity: 1, duration: 0.100 }, 132.245);
+      tl.to("#cg-91", { opacity: 0, duration: 0.100 }, 134.425);
+      tl.set("#cg-91", { visibility: "hidden" }, 134.525);
+
+      // Caption 92: "並以八比二的比例切" (dur: 1.368s)
+      tl.set("#cg-92", { visibility: "visible" }, 134.525);
+      tl.to("#cg-92", { opacity: 1, duration: 0.100 }, 134.525);
+      tl.to("#cg-92", { opacity: 0, duration: 0.100 }, 135.793);
+      tl.set("#cg-92", { visibility: "hidden" }, 135.893);
+
+      // Caption 93: "分訓練集與測試集。" (dur: 1.216s)
+      tl.set("#cg-93", { visibility: "visible" }, 135.893);
+      tl.to("#cg-93", { opacity: 1, duration: 0.100 }, 135.893);
+      tl.to("#cg-93", { opacity: 0, duration: 0.100 }, 137.009);
+      tl.set("#cg-93", { visibility: "hidden" }, 137.109);
+
+      // Caption 94: "對於套用正規化的模型，" (dur: 1.520s)
+      tl.set("#cg-94", { visibility: "visible" }, 137.109);
+      tl.to("#cg-94", { opacity: 1, duration: 0.100 }, 137.109);
+      tl.to("#cg-94", { opacity: 0, duration: 0.100 }, 138.529);
+      tl.set("#cg-94", { visibility: "hidden" }, 138.629);
+
+      // Caption 95: "如" (dur: 0.152s)
+      tl.set("#cg-95", { visibility: "visible" }, 138.629);
+      tl.to("#cg-95", { opacity: 1, duration: 0.046 }, 138.629);
+      tl.to("#cg-95", { opacity: 0, duration: 0.046 }, 138.735);
+      tl.set("#cg-95", { visibility: "hidden" }, 138.781);
+
+      // Caption 96: "Lasso" (dur: 0.760s)
+      tl.set("#cg-96", { visibility: "visible" }, 138.781);
+      tl.to("#cg-96", { opacity: 1, duration: 0.100 }, 138.781);
+      tl.to("#cg-96", { opacity: 0, duration: 0.100 }, 139.441);
+      tl.set("#cg-96", { visibility: "hidden" }, 139.541);
+
+      // Caption 97: "和" (dur: 0.152s)
+      tl.set("#cg-97", { visibility: "visible" }, 139.541);
+      tl.to("#cg-97", { opacity: 1, duration: 0.046 }, 139.541);
+      tl.to("#cg-97", { opacity: 0, duration: 0.046 }, 139.647);
+      tl.set("#cg-97", { visibility: "hidden" }, 139.693);
+
+      // Caption 98: "Ridge，" (dur: 0.760s)
+      tl.set("#cg-98", { visibility: "visible" }, 139.693);
+      tl.to("#cg-98", { opacity: 1, duration: 0.100 }, 139.693);
+      tl.to("#cg-98", { opacity: 0, duration: 0.100 }, 140.353);
+      tl.set("#cg-98", { visibility: "hidden" }, 140.453);
+
+      // Caption 99: "我們也使用了" (dur: 0.912s)
+      tl.set("#cg-99", { visibility: "visible" }, 140.453);
+      tl.to("#cg-99", { opacity: 1, duration: 0.100 }, 140.453);
+      tl.to("#cg-99", { opacity: 0, duration: 0.100 }, 141.265);
+      tl.set("#cg-99", { visibility: "hidden" }, 141.365);
+
+      // Caption 100: "StandardScaler" (dur: 2.128s)
+      tl.set("#cg-100", { visibility: "visible" }, 141.365);
+      tl.to("#cg-100", { opacity: 1, duration: 0.100 }, 141.365);
+      tl.to("#cg-100", { opacity: 0, duration: 0.100 }, 143.393);
+      tl.set("#cg-100", { visibility: "hidden" }, 143.493);
+
+      // Caption 101: "進行特徵縮放。" (dur: 0.912s)
+      tl.set("#cg-101", { visibility: "visible" }, 143.493);
+      tl.to("#cg-101", { opacity: 1, duration: 0.100 }, 143.493);
+      tl.to("#cg-101", { opacity: 0, duration: 0.100 }, 144.305);
+      tl.set("#cg-101", { visibility: "hidden" }, 144.405);
+
+      // Caption 102: "在第四階段，" (dur: 0.919s)
+      tl.set("#cg-102", { visibility: "visible" }, 144.405);
+      tl.to("#cg-102", { opacity: 1, duration: 0.100 }, 144.405);
+      tl.to("#cg-102", { opacity: 0, duration: 0.100 }, 145.224);
+      tl.set("#cg-102", { visibility: "hidden" }, 145.324);
+
+      // Caption 103: "我們進行共線性分析。" (dur: 1.655s)
+      tl.set("#cg-103", { visibility: "visible" }, 145.324);
+      tl.to("#cg-103", { opacity: 1, duration: 0.100 }, 145.324);
+      tl.to("#cg-103", { opacity: 0, duration: 0.100 }, 146.879);
+      tl.set("#cg-103", { visibility: "hidden" }, 146.979);
+
+      // Caption 104: "計算變異數膨脹因子" (dur: 1.654s)
+      tl.set("#cg-104", { visibility: "visible" }, 146.979);
+      tl.to("#cg-104", { opacity: 1, duration: 0.100 }, 146.979);
+      tl.to("#cg-104", { opacity: 0, duration: 0.100 }, 148.533);
+      tl.set("#cg-104", { visibility: "hidden" }, 148.633);
+
+      // Caption 105: "VIF，" (dur: 0.552s)
+      tl.set("#cg-105", { visibility: "visible" }, 148.633);
+      tl.to("#cg-105", { opacity: 1, duration: 0.100 }, 148.633);
+      tl.to("#cg-105", { opacity: 0, duration: 0.100 }, 149.085);
+      tl.set("#cg-105", { visibility: "hidden" }, 149.185);
+
+      // Caption 106: "確認研發支出與行銷支出等主要特" (dur: 2.758s)
+      tl.set("#cg-106", { visibility: "visible" }, 149.185);
+      tl.to("#cg-106", { opacity: 1, duration: 0.100 }, 149.185);
+      tl.to("#cg-106", { opacity: 0, duration: 0.100 }, 151.843);
+      tl.set("#cg-106", { visibility: "hidden" }, 151.943);
+
+      // Caption 107: "徵之間是否存在嚴重的共線性問題，" (dur: 2.757s)
+      tl.set("#cg-107", { visibility: "visible" }, 151.943);
+      tl.to("#cg-107", { opacity: 1, duration: 0.100 }, 151.943);
+      tl.to("#cg-107", { opacity: 0, duration: 0.100 }, 154.600);
+      tl.set("#cg-107", { visibility: "hidden" }, 154.700);
+
+      // Caption 108: "以評估特徵與係數的穩定性。" (dur: 2.206s)
+      tl.set("#cg-108", { visibility: "visible" }, 154.700);
+      tl.to("#cg-108", { opacity: 1, duration: 0.100 }, 154.700);
+      tl.to("#cg-108", { opacity: 0, duration: 0.100 }, 156.806);
+      tl.set("#cg-108", { visibility: "hidden" }, 156.906);
+
+      // Caption 109: "第五階段是特徵選擇。" (dur: 1.633s)
+      tl.set("#cg-109", { visibility: "visible" }, 156.907);
+      tl.to("#cg-109", { opacity: 1, duration: 0.100 }, 156.907);
+      tl.to("#cg-109", { opacity: 0, duration: 0.100 }, 158.440);
+      tl.set("#cg-109", { visibility: "hidden" }, 158.540);
+
+      // Caption 110: "我們使用" (dur: 0.726s)
+      tl.set("#cg-110", { visibility: "visible" }, 158.540);
+      tl.to("#cg-110", { opacity: 1, duration: 0.100 }, 158.540);
+      tl.to("#cg-110", { opacity: 0, duration: 0.100 }, 159.166);
+      tl.set("#cg-110", { visibility: "hidden" }, 159.266);
+
+      // Caption 111: "Lasso" (dur: 0.908s)
+      tl.set("#cg-111", { visibility: "visible" }, 159.266);
+      tl.to("#cg-111", { opacity: 1, duration: 0.100 }, 159.266);
+      tl.to("#cg-111", { opacity: 0, duration: 0.100 }, 160.074);
+      tl.set("#cg-111", { visibility: "hidden" }, 160.174);
+
+      // Caption 112: "迴歸交叉驗證與遞迴特徵消除" (dur: 2.359s)
+      tl.set("#cg-112", { visibility: "visible" }, 160.174);
+      tl.to("#cg-112", { opacity: 1, duration: 0.100 }, 160.174);
+      tl.to("#cg-112", { opacity: 0, duration: 0.100 }, 162.433);
+      tl.set("#cg-112", { visibility: "hidden" }, 162.533);
+
+      // Caption 113: "RFE" (dur: 0.545s)
+      tl.set("#cg-113", { visibility: "visible" }, 162.533);
+      tl.to("#cg-113", { opacity: 1, duration: 0.100 }, 162.533);
+      tl.to("#cg-113", { opacity: 0, duration: 0.100 }, 162.978);
+      tl.set("#cg-113", { visibility: "hidden" }, 163.078);
+
+      // Caption 114: "方法，" (dur: 0.363s)
+      tl.set("#cg-114", { visibility: "visible" }, 163.078);
+      tl.to("#cg-114", { opacity: 1, duration: 0.100 }, 163.078);
+      tl.to("#cg-114", { opacity: 0, duration: 0.100 }, 163.341);
+      tl.set("#cg-114", { visibility: "hidden" }, 163.441);
+
+      // Caption 115: "自動選擇最重要的特徵組合，" (dur: 2.178s)
+      tl.set("#cg-115", { visibility: "visible" }, 163.441);
+      tl.to("#cg-115", { opacity: 1, duration: 0.100 }, 163.441);
+      tl.to("#cg-115", { opacity: 0, duration: 0.100 }, 165.519);
+      tl.set("#cg-115", { visibility: "hidden" }, 165.619);
+
+      // Caption 116: "並對原始特徵" (dur: 1.089s)
+      tl.set("#cg-116", { visibility: "visible" }, 165.619);
+      tl.to("#cg-116", { opacity: 1, duration: 0.100 }, 165.619);
+      tl.to("#cg-116", { opacity: 0, duration: 0.100 }, 166.608);
+      tl.set("#cg-116", { visibility: "hidden" }, 166.708);
+
+      // Caption 117: "and" (dur: 0.544s)
+      tl.set("#cg-117", { visibility: "visible" }, 166.708);
+      tl.to("#cg-117", { opacity: 1, duration: 0.100 }, 166.708);
+      tl.to("#cg-117", { opacity: 0, duration: 0.100 }, 167.152);
+      tl.set("#cg-117", { visibility: "hidden" }, 167.252);
+
+      // Caption 118: "衍生特徵進行比較排名。" (dur: 1.815s)
+      tl.set("#cg-118", { visibility: "visible" }, 167.252);
+      tl.to("#cg-118", { opacity: 1, duration: 0.100 }, 167.252);
+      tl.to("#cg-118", { opacity: 0, duration: 0.100 }, 168.967);
+      tl.set("#cg-118", { visibility: "hidden" }, 169.067);
+
+      // Caption 119: "第六階段是建模。" (dur: 1.081s)
+      tl.set("#cg-119", { visibility: "visible" }, 169.067);
+      tl.to("#cg-119", { opacity: 1, duration: 0.100 }, 169.067);
+      tl.to("#cg-119", { opacity: 0, duration: 0.100 }, 170.048);
+      tl.set("#cg-119", { visibility: "hidden" }, 170.148);
+
+      // Caption 120: "我們建立了線性迴歸作為基準模型，" (dur: 2.315s)
+      tl.set("#cg-120", { visibility: "visible" }, 170.148);
+      tl.to("#cg-120", { opacity: 1, duration: 0.100 }, 170.148);
+      tl.to("#cg-120", { opacity: 0, duration: 0.100 }, 172.363);
+      tl.set("#cg-120", { visibility: "hidden" }, 172.463);
+
+      // Caption 121: "並訓練了" (dur: 0.618s)
+      tl.set("#cg-121", { visibility: "visible" }, 172.463);
+      tl.to("#cg-121", { opacity: 1, duration: 0.100 }, 172.463);
+      tl.to("#cg-121", { opacity: 0, duration: 0.100 }, 172.981);
+      tl.set("#cg-121", { visibility: "hidden" }, 173.081);
+
+      // Caption 122: "Ridge、" (dur: 0.772s)
+      tl.set("#cg-122", { visibility: "visible" }, 173.081);
+      tl.to("#cg-122", { opacity: 1, duration: 0.100 }, 173.081);
+      tl.to("#cg-122", { opacity: 0, duration: 0.100 }, 173.753);
+      tl.set("#cg-122", { visibility: "hidden" }, 173.853);
+
+      // Caption 123: "Lasso、" (dur: 0.772s)
+      tl.set("#cg-123", { visibility: "visible" }, 173.853);
+      tl.to("#cg-123", { opacity: 1, duration: 0.100 }, 173.853);
+      tl.to("#cg-123", { opacity: 0, duration: 0.100 }, 174.525);
+      tl.set("#cg-123", { visibility: "hidden" }, 174.625);
+
+      // Caption 124: "隨機森林" (dur: 0.617s)
+      tl.set("#cg-124", { visibility: "visible" }, 174.625);
+      tl.to("#cg-124", { opacity: 1, duration: 0.100 }, 174.625);
+      tl.to("#cg-124", { opacity: 0, duration: 0.100 }, 175.142);
+      tl.set("#cg-124", { visibility: "hidden" }, 175.242);
+
+      // Caption 125: "and" (dur: 0.464s)
+      tl.set("#cg-125", { visibility: "visible" }, 175.242);
+      tl.to("#cg-125", { opacity: 1, duration: 0.100 }, 175.242);
+      tl.to("#cg-125", { opacity: 0, duration: 0.100 }, 175.606);
+      tl.set("#cg-125", { visibility: "hidden" }, 175.706);
+
+      // Caption 126: "梯度提升迴歸等候選模型，" (dur: 1.698s)
+      tl.set("#cg-126", { visibility: "visible" }, 175.706);
+      tl.to("#cg-126", { opacity: 1, duration: 0.100 }, 175.706);
+      tl.to("#cg-126", { opacity: 0, duration: 0.100 }, 177.304);
+      tl.set("#cg-126", { visibility: "hidden" }, 177.404);
+
+      // Caption 127: "同時也考慮了" (dur: 0.926s)
+      tl.set("#cg-127", { visibility: "visible" }, 177.404);
+      tl.to("#cg-127", { opacity: 1, duration: 0.100 }, 177.404);
+      tl.to("#cg-127", { opacity: 0, duration: 0.100 }, 178.230);
+      tl.set("#cg-127", { visibility: "hidden" }, 178.330);
+
+      // Caption 128: "XGBoost" (dur: 1.081s)
+      tl.set("#cg-128", { visibility: "visible" }, 178.330);
+      tl.to("#cg-128", { opacity: 1, duration: 0.100 }, 178.330);
+      tl.to("#cg-128", { opacity: 0, duration: 0.100 }, 179.311);
+      tl.set("#cg-128", { visibility: "hidden" }, 179.411);
+
+      // Caption 129: "與" (dur: 0.154s)
+      tl.set("#cg-129", { visibility: "visible" }, 179.411);
+      tl.to("#cg-129", { opacity: 1, duration: 0.046 }, 179.411);
+      tl.to("#cg-129", { opacity: 0, duration: 0.046 }, 179.519);
+      tl.set("#cg-129", { visibility: "hidden" }, 179.565);
+
+      // Caption 130: "LightGBM。" (dur: 1.235s)
+      tl.set("#cg-130", { visibility: "visible" }, 179.565);
+      tl.to("#cg-130", { opacity: 1, duration: 0.100 }, 179.565);
+      tl.to("#cg-130", { opacity: 0, duration: 0.100 }, 180.700);
+      tl.set("#cg-130", { visibility: "hidden" }, 180.800);
+
+      // Caption 131: "第七階段是模型評估。" (dur: 1.673s)
+      tl.set("#cg-131", { visibility: "visible" }, 180.800);
+      tl.to("#cg-131", { opacity: 1, duration: 0.100 }, 180.800);
+      tl.to("#cg-131", { opacity: 0, duration: 0.100 }, 182.373);
+      tl.set("#cg-131", { visibility: "hidden" }, 182.473);
+
+      // Caption 132: "我們使用" (dur: 0.744s)
+      tl.set("#cg-132", { visibility: "visible" }, 182.473);
+      tl.to("#cg-132", { opacity: 1, duration: 0.100 }, 182.473);
+      tl.to("#cg-132", { opacity: 0, duration: 0.100 }, 183.117);
+      tl.set("#cg-132", { visibility: "hidden" }, 183.217);
+
+      // Caption 133: "R²、" (dur: 0.372s)
+      tl.set("#cg-133", { visibility: "visible" }, 183.217);
+      tl.to("#cg-133", { opacity: 1, duration: 0.100 }, 183.217);
+      tl.to("#cg-133", { opacity: 0, duration: 0.100 }, 183.489);
+      tl.set("#cg-133", { visibility: "hidden" }, 183.589);
+
+      // Caption 134: "平均絕對誤差" (dur: 1.115s)
+      tl.set("#cg-134", { visibility: "visible" }, 183.589);
+      tl.to("#cg-134", { opacity: 1, duration: 0.100 }, 183.589);
+      tl.to("#cg-134", { opacity: 0, duration: 0.100 }, 184.604);
+      tl.set("#cg-134", { visibility: "hidden" }, 184.704);
+
+      // Caption 135: "MAE" (dur: 0.558s)
+      tl.set("#cg-135", { visibility: "visible" }, 184.704);
+      tl.to("#cg-135", { opacity: 1, duration: 0.100 }, 184.704);
+      tl.to("#cg-135", { opacity: 0, duration: 0.100 }, 185.162);
+      tl.set("#cg-135", { visibility: "hidden" }, 185.262);
+
+      // Caption 136: "和" (dur: 0.186s)
+      tl.set("#cg-136", { visibility: "visible" }, 185.262);
+      tl.to("#cg-136", { opacity: 1, duration: 0.056 }, 185.262);
+      tl.to("#cg-136", { opacity: 0, duration: 0.056 }, 185.392);
+      tl.set("#cg-136", { visibility: "hidden" }, 185.448);
+
+      // Caption 137: "均方根誤差" (dur: 0.929s)
+      tl.set("#cg-137", { visibility: "visible" }, 185.448);
+      tl.to("#cg-137", { opacity: 1, duration: 0.100 }, 185.448);
+      tl.to("#cg-137", { opacity: 0, duration: 0.100 }, 186.277);
+      tl.set("#cg-137", { visibility: "hidden" }, 186.377);
+
+      // Caption 138: "RMSE" (dur: 0.744s)
+      tl.set("#cg-138", { visibility: "visible" }, 186.377);
+      tl.to("#cg-138", { opacity: 1, duration: 0.100 }, 186.377);
+      tl.to("#cg-138", { opacity: 0, duration: 0.100 }, 187.021);
+      tl.set("#cg-138", { visibility: "hidden" }, 187.121);
+
+      // Caption 139: "作為評估指標，" (dur: 1.115s)
+      tl.set("#cg-139", { visibility: "visible" }, 187.121);
+      tl.to("#cg-139", { opacity: 1, duration: 0.100 }, 187.121);
+      tl.to("#cg-139", { opacity: 0, duration: 0.100 }, 188.136);
+      tl.set("#cg-139", { visibility: "hidden" }, 188.236);
+
+      // Caption 140: "並進行五折交叉驗證。" (dur: 1.673s)
+      tl.set("#cg-140", { visibility: "visible" }, 188.236);
+      tl.to("#cg-140", { opacity: 1, duration: 0.100 }, 188.236);
+      tl.to("#cg-140", { opacity: 0, duration: 0.100 }, 189.809);
+      tl.set("#cg-140", { visibility: "hidden" }, 189.909);
+
+      // Caption 141: "梯度提升迴歸在測試集上" (dur: 2.045s)
+      tl.set("#cg-141", { visibility: "visible" }, 189.909);
+      tl.to("#cg-141", { opacity: 1, duration: 0.100 }, 189.909);
+      tl.to("#cg-141", { opacity: 0, duration: 0.100 }, 191.854);
+      tl.set("#cg-141", { visibility: "hidden" }, 191.954);
+
+      // Caption 142: "取得了最優的預測表現。" (dur: 1.859s)
+      tl.set("#cg-142", { visibility: "visible" }, 191.954);
+      tl.to("#cg-142", { opacity: 1, duration: 0.100 }, 191.954);
+      tl.to("#cg-142", { opacity: 0, duration: 0.100 }, 193.713);
+      tl.set("#cg-142", { visibility: "hidden" }, 193.813);
+
+      // Caption 143: "第八階段是可解釋性" (dur: 1.624s)
+      tl.set("#cg-143", { visibility: "visible" }, 193.813);
+      tl.to("#cg-143", { opacity: 1, duration: 0.100 }, 193.813);
+      tl.to("#cg-143", { opacity: 0, duration: 0.100 }, 195.337);
+      tl.set("#cg-143", { visibility: "hidden" }, 195.437);
+
+      // Caption 144: "AI。" (dur: 0.360s)
+      tl.set("#cg-144", { visibility: "visible" }, 195.437);
+      tl.to("#cg-144", { opacity: 1, duration: 0.100 }, 195.437);
+      tl.to("#cg-144", { opacity: 0, duration: 0.100 }, 195.697);
+      tl.set("#cg-144", { visibility: "hidden" }, 195.797);
+
+      // Caption 145: "我們使用" (dur: 0.722s)
+      tl.set("#cg-145", { visibility: "visible" }, 195.797);
+      tl.to("#cg-145", { opacity: 1, duration: 0.100 }, 195.797);
+      tl.to("#cg-145", { opacity: 0, duration: 0.100 }, 196.419);
+      tl.set("#cg-145", { visibility: "hidden" }, 196.519);
+
+      // Caption 146: "SHAP" (dur: 0.721s)
+      tl.set("#cg-146", { visibility: "visible" }, 196.519);
+      tl.to("#cg-146", { opacity: 1, duration: 0.100 }, 196.519);
+      tl.to("#cg-146", { opacity: 0, duration: 0.100 }, 197.140);
+      tl.set("#cg-146", { visibility: "hidden" }, 197.240);
+
+      // Caption 147: "分析進行全局與局部解釋，" (dur: 1.985s)
+      tl.set("#cg-147", { visibility: "visible" }, 197.240);
+      tl.to("#cg-147", { opacity: 1, duration: 0.100 }, 197.240);
+      tl.to("#cg-147", { opacity: 0, duration: 0.100 }, 199.125);
+      tl.set("#cg-147", { visibility: "hidden" }, 199.225);
+
+      // Caption 148: "結果證實研發支出是主導" (dur: 1.984s)
+      tl.set("#cg-148", { visibility: "visible" }, 199.225);
+      tl.to("#cg-148", { opacity: 1, duration: 0.100 }, 199.225);
+      tl.to("#cg-148", { opacity: 0, duration: 0.100 }, 201.109);
+      tl.set("#cg-148", { visibility: "hidden" }, 201.209);
+
+      // Caption 149: "獲利預測的最關鍵因子，" (dur: 1.804s)
+      tl.set("#cg-149", { visibility: "visible" }, 201.209);
+      tl.to("#cg-149", { opacity: 1, duration: 0.100 }, 201.209);
+      tl.to("#cg-149", { opacity: 0, duration: 0.100 }, 202.913);
+      tl.set("#cg-149", { visibility: "hidden" }, 203.013);
+
+      // Caption 150: "行銷支出次之，" (dur: 1.082s)
+      tl.set("#cg-150", { visibility: "visible" }, 203.013);
+      tl.to("#cg-150", { opacity: 1, duration: 0.100 }, 203.013);
+      tl.to("#cg-150", { opacity: 0, duration: 0.100 }, 203.995);
+      tl.set("#cg-150", { visibility: "hidden" }, 204.095);
+
+      // Caption 151: "行政支出與州別影響極小。" (dur: 1.985s)
+      tl.set("#cg-151", { visibility: "visible" }, 204.095);
+      tl.to("#cg-151", { opacity: 1, duration: 0.100 }, 204.095);
+      tl.to("#cg-151", { opacity: 0, duration: 0.100 }, 205.980);
+      tl.set("#cg-151", { visibility: "hidden" }, 206.080);
 
       // Caption 152: "第九階段為商業分析。" (dur: 1.608s)
-      tl.set("#cg-152", { visibility: "visible" }, 212.651);
-      tl.to("#cg-152", { opacity: 1, y: 0, duration: 0.150 }, 212.651);
-      tl.to("#cg-152", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 214.139);
-      tl.set("#cg-152", { visibility: "hidden" }, 214.259);
+      tl.set("#cg-152", { visibility: "visible" }, 206.080);
+      tl.to("#cg-152", { opacity: 1, duration: 0.100 }, 206.080);
+      tl.to("#cg-152", { opacity: 0, duration: 0.100 }, 207.588);
+      tl.set("#cg-152", { visibility: "hidden" }, 207.688);
 
       // Caption 153: "進行假設模擬：" (dur: 1.072s)
-      tl.set("#cg-153", { visibility: "visible" }, 214.259);
-      tl.to("#cg-153", { opacity: 1, y: 0, duration: 0.150 }, 214.259);
-      tl.to("#cg-153", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 215.211);
-      tl.set("#cg-153", { visibility: "hidden" }, 215.331);
+      tl.set("#cg-153", { visibility: "visible" }, 207.688);
+      tl.to("#cg-153", { opacity: 1, duration: 0.100 }, 207.688);
+      tl.to("#cg-153", { opacity: 0, duration: 0.100 }, 208.660);
+      tl.set("#cg-153", { visibility: "hidden" }, 208.760);
 
       // Caption 154: "研發支出增加百分之十，" (dur: 1.787s)
-      tl.set("#cg-154", { visibility: "visible" }, 215.331);
-      tl.to("#cg-154", { opacity: 1, y: 0, duration: 0.150 }, 215.331);
-      tl.to("#cg-154", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 216.998);
-      tl.set("#cg-154", { visibility: "hidden" }, 217.118);
+      tl.set("#cg-154", { visibility: "visible" }, 208.760);
+      tl.to("#cg-154", { opacity: 1, duration: 0.100 }, 208.760);
+      tl.to("#cg-154", { opacity: 0, duration: 0.100 }, 210.447);
+      tl.set("#cg-154", { visibility: "hidden" }, 210.547);
 
       // Caption 155: "利潤將提升約百分之十二。" (dur: 1.965s)
-      tl.set("#cg-155", { visibility: "visible" }, 217.118);
-      tl.to("#cg-155", { opacity: 1, y: 0, duration: 0.150 }, 217.118);
-      tl.to("#cg-155", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 218.963);
-      tl.set("#cg-155", { visibility: "hidden" }, 219.083);
+      tl.set("#cg-155", { visibility: "visible" }, 210.547);
+      tl.to("#cg-155", { opacity: 1, duration: 0.100 }, 210.547);
+      tl.to("#cg-155", { opacity: 0, duration: 0.100 }, 212.412);
+      tl.set("#cg-155", { visibility: "hidden" }, 212.512);
 
       // Caption 156: "我們進一步分析了高低獲" (dur: 1.965s)
-      tl.set("#cg-156", { visibility: "visible" }, 219.083);
-      tl.to("#cg-156", { opacity: 1, y: 0, duration: 0.150 }, 219.083);
-      tl.to("#cg-156", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 220.928);
-      tl.set("#cg-156", { visibility: "hidden" }, 221.048);
+      tl.set("#cg-156", { visibility: "visible" }, 212.512);
+      tl.to("#cg-156", { opacity: 1, duration: 0.100 }, 212.512);
+      tl.to("#cg-156", { opacity: 0, duration: 0.100 }, 214.377);
+      tl.set("#cg-156", { visibility: "hidden" }, 214.477);
 
       // Caption 157: "利企業的預算配置差異，" (dur: 1.787s)
-      tl.set("#cg-157", { visibility: "visible" }, 221.048);
-      tl.to("#cg-157", { opacity: 1, y: 0, duration: 0.150 }, 221.048);
-      tl.to("#cg-157", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 222.715);
-      tl.set("#cg-157", { visibility: "hidden" }, 222.835);
+      tl.set("#cg-157", { visibility: "visible" }, 214.477);
+      tl.to("#cg-157", { opacity: 1, duration: 0.100 }, 214.477);
+      tl.to("#cg-157", { opacity: 0, duration: 0.100 }, 216.164);
+      tl.set("#cg-157", { visibility: "hidden" }, 216.264);
 
       // Caption 158: "並使用" (dur: 0.536s)
-      tl.set("#cg-158", { visibility: "visible" }, 222.835);
-      tl.to("#cg-158", { opacity: 1, y: 0, duration: 0.150 }, 222.835);
-      tl.to("#cg-158", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 223.251);
-      tl.set("#cg-158", { visibility: "hidden" }, 223.371);
+      tl.set("#cg-158", { visibility: "visible" }, 216.264);
+      tl.to("#cg-158", { opacity: 1, duration: 0.100 }, 216.264);
+      tl.to("#cg-158", { opacity: 0, duration: 0.100 }, 216.700);
+      tl.set("#cg-158", { visibility: "hidden" }, 216.800);
 
       // Caption 159: "K-Means" (dur: 1.072s)
-      tl.set("#cg-159", { visibility: "visible" }, 223.371);
-      tl.to("#cg-159", { opacity: 1, y: 0, duration: 0.150 }, 223.371);
-      tl.to("#cg-159", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 224.323);
-      tl.set("#cg-159", { visibility: "hidden" }, 224.443);
+      tl.set("#cg-159", { visibility: "visible" }, 216.800);
+      tl.to("#cg-159", { opacity: 1, duration: 0.100 }, 216.800);
+      tl.to("#cg-159", { opacity: 0, duration: 0.100 }, 217.772);
+      tl.set("#cg-159", { visibility: "hidden" }, 217.872);
 
       // Caption 160: "進行集群分析。" (dur: 1.072s)
-      tl.set("#cg-160", { visibility: "visible" }, 224.443);
-      tl.to("#cg-160", { opacity: 1, y: 0, duration: 0.150 }, 224.443);
-      tl.to("#cg-160", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 225.395);
-      tl.set("#cg-160", { visibility: "hidden" }, 225.515);
+      tl.set("#cg-160", { visibility: "visible" }, 217.872);
+      tl.to("#cg-160", { opacity: 1, duration: 0.100 }, 217.872);
+      tl.to("#cg-160", { opacity: 0, duration: 0.100 }, 218.844);
+      tl.set("#cg-160", { visibility: "hidden" }, 218.944);
 
       // Caption 161: "第十階段提取商業洞察與最終建議。" (dur: 3.074s)
-      tl.set("#cg-161", { visibility: "visible" }, 225.515);
-      tl.to("#cg-161", { opacity: 1, y: 0, duration: 0.150 }, 225.515);
-      tl.to("#cg-161", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 228.469);
-      tl.set("#cg-161", { visibility: "hidden" }, 228.589);
+      tl.set("#cg-161", { visibility: "visible" }, 218.944);
+      tl.to("#cg-161", { opacity: 1, duration: 0.100 }, 218.944);
+      tl.to("#cg-161", { opacity: 0, duration: 0.100 }, 221.918);
+      tl.set("#cg-161", { visibility: "hidden" }, 222.018);
 
       // Caption 162: "強烈建議企業應增加研發投資，" (dur: 2.665s)
-      tl.set("#cg-162", { visibility: "visible" }, 228.589);
-      tl.to("#cg-162", { opacity: 1, y: 0, duration: 0.150 }, 228.589);
-      tl.to("#cg-162", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 231.134);
-      tl.set("#cg-162", { visibility: "hidden" }, 231.254);
+      tl.set("#cg-162", { visibility: "visible" }, 222.018);
+      tl.to("#cg-162", { opacity: 1, duration: 0.100 }, 222.018);
+      tl.to("#cg-162", { opacity: 0, duration: 0.100 }, 224.583);
+      tl.set("#cg-162", { visibility: "hidden" }, 224.683);
 
       // Caption 163: "優化行銷效率，" (dur: 1.229s)
-      tl.set("#cg-163", { visibility: "visible" }, 231.254);
-      tl.to("#cg-163", { opacity: 1, y: 0, duration: 0.150 }, 231.254);
-      tl.to("#cg-163", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 232.363);
-      tl.set("#cg-163", { visibility: "hidden" }, 232.483);
+      tl.set("#cg-163", { visibility: "visible" }, 224.683);
+      tl.to("#cg-163", { opacity: 1, duration: 0.100 }, 224.683);
+      tl.to("#cg-163", { opacity: 0, duration: 0.100 }, 225.812);
+      tl.set("#cg-163", { visibility: "hidden" }, 225.912);
 
       // Caption 164: "控制行政成本，" (dur: 1.230s)
-      tl.set("#cg-164", { visibility: "visible" }, 232.483);
-      tl.to("#cg-164", { opacity: 1, y: 0, duration: 0.150 }, 232.483);
-      tl.to("#cg-164", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 233.593);
-      tl.set("#cg-164", { visibility: "hidden" }, 233.713);
+      tl.set("#cg-164", { visibility: "visible" }, 225.912);
+      tl.to("#cg-164", { opacity: 1, duration: 0.100 }, 225.912);
+      tl.to("#cg-164", { opacity: 0, duration: 0.100 }, 227.042);
+      tl.set("#cg-164", { visibility: "hidden" }, 227.142);
 
       // Caption 165: "並建立利潤預測系" (dur: 1.640s)
-      tl.set("#cg-165", { visibility: "visible" }, 233.713);
-      tl.to("#cg-165", { opacity: 1, y: 0, duration: 0.150 }, 233.713);
-      tl.to("#cg-165", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 235.233);
-      tl.set("#cg-165", { visibility: "hidden" }, 235.353);
+      tl.set("#cg-165", { visibility: "visible" }, 227.142);
+      tl.to("#cg-165", { opacity: 1, duration: 0.100 }, 227.142);
+      tl.to("#cg-165", { opacity: 0, duration: 0.100 }, 228.682);
+      tl.set("#cg-165", { visibility: "hidden" }, 228.782);
 
       // Caption 166: "統以支援預算決策。" (dur: 1.639s)
-      tl.set("#cg-166", { visibility: "visible" }, 235.353);
-      tl.to("#cg-166", { opacity: 1, y: 0, duration: 0.150 }, 235.353);
-      tl.to("#cg-166", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 236.872);
-      tl.set("#cg-166", { visibility: "hidden" }, 236.992);
+      tl.set("#cg-166", { visibility: "visible" }, 228.782);
+      tl.to("#cg-166", { opacity: 1, duration: 0.100 }, 228.782);
+      tl.to("#cg-166", { opacity: 0, duration: 0.100 }, 230.321);
+      tl.set("#cg-166", { visibility: "hidden" }, 230.421);
 
-      // Caption 167: "最後是部署階段。" (dur: 1.213s)
-      tl.set("#cg-167", { visibility: "visible" }, 236.992);
-      tl.to("#cg-167", { opacity: 1, y: 0, duration: 0.150 }, 236.992);
-      tl.to("#cg-167", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 238.085);
-      tl.set("#cg-167", { visibility: "hidden" }, 238.205);
+      // Caption 167: "最後是部署階段。" (dur: 1.139s)
+      tl.set("#cg-167", { visibility: "visible" }, 230.421);
+      tl.to("#cg-167", { opacity: 1, duration: 0.100 }, 230.421);
+      tl.to("#cg-167", { opacity: 0, duration: 0.100 }, 231.460);
+      tl.set("#cg-167", { visibility: "hidden" }, 231.560);
 
-      // Caption 168: "我們推薦使用" (dur: 1.040s)
-      tl.set("#cg-168", { visibility: "visible" }, 238.205);
-      tl.to("#cg-168", { opacity: 1, y: 0, duration: 0.150 }, 238.205);
-      tl.to("#cg-168", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 239.125);
-      tl.set("#cg-168", { visibility: "hidden" }, 239.245);
+      // Caption 168: "我們推薦使用" (dur: 0.977s)
+      tl.set("#cg-168", { visibility: "visible" }, 231.560);
+      tl.to("#cg-168", { opacity: 1, duration: 0.100 }, 231.560);
+      tl.to("#cg-168", { opacity: 0, duration: 0.100 }, 232.437);
+      tl.set("#cg-168", { visibility: "hidden" }, 232.537);
 
-      // Caption 169: "Streamlit" (dur: 1.560s)
-      tl.set("#cg-169", { visibility: "visible" }, 239.245);
-      tl.to("#cg-169", { opacity: 1, y: 0, duration: 0.150 }, 239.245);
-      tl.to("#cg-169", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 240.685);
-      tl.set("#cg-169", { visibility: "hidden" }, 240.805);
+      // Caption 169: "Streamlit" (dur: 1.465s)
+      tl.set("#cg-169", { visibility: "visible" }, 232.537);
+      tl.to("#cg-169", { opacity: 1, duration: 0.100 }, 232.537);
+      tl.to("#cg-169", { opacity: 0, duration: 0.100 }, 233.902);
+      tl.set("#cg-169", { visibility: "hidden" }, 234.002);
 
-      // Caption 170: "建立交互式決策儀表板，" (dur: 1.733s)
-      tl.set("#cg-170", { visibility: "visible" }, 240.805);
-      tl.to("#cg-170", { opacity: 1, y: 0, duration: 0.150 }, 240.805);
-      tl.to("#cg-170", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 242.418);
-      tl.set("#cg-170", { visibility: "hidden" }, 242.538);
+      // Caption 170: "建立交互式決策儀表板，" (dur: 1.627s)
+      tl.set("#cg-170", { visibility: "visible" }, 234.002);
+      tl.to("#cg-170", { opacity: 1, duration: 0.100 }, 234.002);
+      tl.to("#cg-170", { opacity: 0, duration: 0.100 }, 235.529);
+      tl.set("#cg-170", { visibility: "hidden" }, 235.629);
 
-      // Caption 171: "提供利潤預測、" (dur: 1.039s)
-      tl.set("#cg-171", { visibility: "visible" }, 242.538);
-      tl.to("#cg-171", { opacity: 1, y: 0, duration: 0.150 }, 242.538);
-      tl.to("#cg-171", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 243.457);
-      tl.set("#cg-171", { visibility: "hidden" }, 243.577);
+      // Caption 171: "提供利潤預測、" (dur: 0.977s)
+      tl.set("#cg-171", { visibility: "visible" }, 235.629);
+      tl.to("#cg-171", { opacity: 1, duration: 0.100 }, 235.629);
+      tl.to("#cg-171", { opacity: 0, duration: 0.100 }, 236.506);
+      tl.set("#cg-171", { visibility: "hidden" }, 236.606);
 
-      // Caption 172: "假設分析與" (dur: 0.867s)
-      tl.set("#cg-172", { visibility: "visible" }, 243.577);
-      tl.to("#cg-172", { opacity: 1, y: 0, duration: 0.150 }, 243.577);
-      tl.to("#cg-172", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 244.324);
-      tl.set("#cg-172", { visibility: "hidden" }, 244.444);
+      // Caption 172: "假設分析與" (dur: 0.814s)
+      tl.set("#cg-172", { visibility: "visible" }, 236.606);
+      tl.to("#cg-172", { opacity: 1, duration: 0.100 }, 236.606);
+      tl.to("#cg-172", { opacity: 0, duration: 0.100 }, 237.320);
+      tl.set("#cg-172", { visibility: "hidden" }, 237.420);
 
-      // Caption 173: "SHAP" (dur: 0.693s)
-      tl.set("#cg-173", { visibility: "visible" }, 244.444);
-      tl.to("#cg-173", { opacity: 1, y: 0, duration: 0.150 }, 244.444);
-      tl.to("#cg-173", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 245.017);
-      tl.set("#cg-173", { visibility: "hidden" }, 245.137);
+      // Caption 173: "SHAP" (dur: 0.651s)
+      tl.set("#cg-173", { visibility: "visible" }, 237.420);
+      tl.to("#cg-173", { opacity: 1, duration: 0.100 }, 237.420);
+      tl.to("#cg-173", { opacity: 0, duration: 0.100 }, 237.971);
+      tl.set("#cg-173", { visibility: "hidden" }, 238.071);
 
-      // Caption 174: "解釋等功能。" (dur: 0.867s)
-      tl.set("#cg-174", { visibility: "visible" }, 245.137);
-      tl.to("#cg-174", { opacity: 1, y: 0, duration: 0.150 }, 245.137);
-      tl.to("#cg-174", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 245.884);
-      tl.set("#cg-174", { visibility: "hidden" }, 246.004);
+      // Caption 174: "解釋等功能。" (dur: 0.814s)
+      tl.set("#cg-174", { visibility: "visible" }, 238.071);
+      tl.to("#cg-174", { opacity: 1, duration: 0.100 }, 238.071);
+      tl.to("#cg-174", { opacity: 0, duration: 0.100 }, 238.785);
+      tl.set("#cg-174", { visibility: "hidden" }, 238.885);
 
-      // Caption 175: "最終交付成果包括完整報告、" (dur: 2.079s)
-      tl.set("#cg-175", { visibility: "visible" }, 246.004);
-      tl.to("#cg-175", { opacity: 1, y: 0, duration: 0.150 }, 246.004);
-      tl.to("#cg-175", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 247.963);
-      tl.set("#cg-175", { visibility: "hidden" }, 248.083);
+      // Caption 175: "最終交付成果包括完整報告、" (dur: 1.953s)
+      tl.set("#cg-175", { visibility: "visible" }, 238.885);
+      tl.to("#cg-175", { opacity: 1, duration: 0.100 }, 238.885);
+      tl.to("#cg-175", { opacity: 0, duration: 0.100 }, 240.738);
+      tl.set("#cg-175", { visibility: "hidden" }, 240.838);
 
-      // Caption 176: "代碼庫與" (dur: 0.693s)
-      tl.set("#cg-176", { visibility: "visible" }, 248.083);
-      tl.to("#cg-176", { opacity: 1, y: 0, duration: 0.150 }, 248.083);
-      tl.to("#cg-176", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 248.656);
-      tl.set("#cg-176", { visibility: "hidden" }, 248.776);
+      // Caption 176: "代碼庫與" (dur: 0.651s)
+      tl.set("#cg-176", { visibility: "visible" }, 240.838);
+      tl.to("#cg-176", { opacity: 1, duration: 0.100 }, 240.838);
+      tl.to("#cg-176", { opacity: 0, duration: 0.100 }, 241.389);
+      tl.set("#cg-176", { visibility: "hidden" }, 241.489);
 
-      // Caption 177: "Streamlit" (dur: 1.560s)
-      tl.set("#cg-177", { visibility: "visible" }, 248.776);
-      tl.to("#cg-177", { opacity: 1, y: 0, duration: 0.150 }, 248.776);
-      tl.to("#cg-177", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 250.216);
-      tl.set("#cg-177", { visibility: "hidden" }, 250.336);
+      // Caption 177: "Streamlit" (dur: 1.465s)
+      tl.set("#cg-177", { visibility: "visible" }, 241.489);
+      tl.to("#cg-177", { opacity: 1, duration: 0.100 }, 241.489);
+      tl.to("#cg-177", { opacity: 0, duration: 0.100 }, 242.854);
+      tl.set("#cg-177", { visibility: "hidden" }, 242.954);
 
-      // Caption 178: "應用程式。" (dur: 0.693s)
-      tl.set("#cg-178", { visibility: "visible" }, 250.336);
-      tl.to("#cg-178", { opacity: 1, y: 0, duration: 0.150 }, 250.336);
-      tl.to("#cg-178", { opacity: 0, y: -5, duration: 0.120, ease: "power2.in" }, 250.909);
-      tl.set("#cg-178", { visibility: "hidden" }, 251.029);
+      // Caption 178: "應用程式。" (dur: 0.651s)
+      tl.set("#cg-178", { visibility: "visible" }, 242.954);
+      tl.to("#cg-178", { opacity: 1, duration: 0.100 }, 242.954);
+      tl.to("#cg-178", { opacity: 0, duration: 0.100 }, 243.505);
+      tl.set("#cg-178", { visibility: "hidden" }, 243.605);
 
     window.__timelines["main"] = tl;
   </script>

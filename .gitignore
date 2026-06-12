@@ -14,3 +14,4 @@ scratch/
 test_speech.wav
 transcribe_audio.py
 skills-lock.json
+work-*/
