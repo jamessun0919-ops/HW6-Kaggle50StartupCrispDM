@@ -172,6 +172,8 @@ Open `notebooks/kaggle_50_startups_full_analysis.ipynb`
 
 ![RMSE by Method](rmse_by_method.png)
 
+![Combined R² and RMSE by Feature Count](reports/combined_metrics.png)
+
 **Key Insight:** R&D alone achieves R²=0.9265 (exceeding the 0.90 target). Adding more features slightly reduces performance due to noise and multicollinearity.
 
 ---
